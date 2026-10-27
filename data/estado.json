@@ -1,0 +1,38 @@
+{
+ "alertas": {},
+ "cotacoes": {
+  "CNF-CGB-2026-12-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 876.0,
+   "quando": "2026-10-27T04:00:02.672400+00:00",
+   "saida": ""
+  },
+  "CNF-GIG-2027-01-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 425.0,
+   "quando": "2026-10-27T03:59:55.400087+00:00",
+   "saida": "3:05 PM on Fri, Jan 8"
+  },
+  "CNF-OPS-2026-12-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 1226.0,
+   "quando": "2026-10-27T04:00:00.108563+00:00",
+   "saida": ""
+  },
+  "GIG-CNF-2027-01-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 613.0,
+   "quando": "2026-10-27T03:59:57.551208+00:00",
+   "saida": ""
+  }
+ },
+ "melhor_rota": {}
+}
