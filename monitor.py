@@ -302,23 +302,39 @@ def linha_trecho(rot, cot, o, d, data):
             f"({info_voo((cot, o, d))})\n      {links_html(o, d, data)}")
 
 
+def links_curtos(o, d, data):
+    return links_html(o, d, data)
+
+
+def combo_nacional(a, titulo):
+    """Um card: total, os 2 trechos e os links agrupados no fim."""
+    (ci, ai, di), (cv, av, dv) = a["ida"], a["volta"]
+    return "\n".join([
+        titulo,
+        f"💰 <b>{fmt_reais(a['total'])}</b> ida + volta",
+        f"🛫 Ida {fmt_data(di)} {C.ORIGEM}→{ai} · {fmt_reais(ci['preco'])} · {info_voo((ci, C.ORIGEM, ai))}",
+        f"🛬 Volta {fmt_data(dv)} {av}→{C.ORIGEM} · {fmt_reais(cv['preco'])} · {info_voo((cv, av, C.ORIGEM))}",
+        f"🔗 Ida: {links_curtos(C.ORIGEM, ai, di)}",
+        f"🔗 Volta: {links_curtos(av, C.ORIGEM, dv)}",
+    ])
+
+
 def bloco_nacional(achados):
-    linhas = ["🏖️ <b>Fins de semana com os 2 trechos até "
-              f"{fmt_reais(C.LIMITE_TRECHO)}</b>"]
-    if len(achados) > 15:
-        linhas.append(f"<i>(mostrando os 15 mais baratos de {len(achados)})</i>")
-        achados = sorted(sorted(achados, key=lambda x: x["total"])[:15], key=lambda x: x["ida"][2])
-    for a in achados:
-        (ci, ai, di), (cv, av, dv) = a["ida"], a["volta"]
-        linhas.append(f"\n📍 <b>{a['cidade']}</b> — {html.escape(a['rotulo'])} "
-                      f"(total {fmt_reais(a['total'])})")
-        linhas.append(linha_trecho("Ida  ", ci, C.ORIGEM, ai, di))
-        linhas.append(linha_trecho("Volta", cv, av, C.ORIGEM, dv))
-    return "\n".join(linhas)
+    """Uma mensagem por estado com os fins de semana até o limite."""
+    msgs = []
+    for estado in C.NACIONAL:
+        l = sorted([a for a in achados if a["cidade"] == estado], key=lambda x: x["total"])[:4]
+        if not l:
+            continue
+        cards = [combo_nacional(a, f"🗓️ {html.escape(a['rotulo'])}") for a in sorted(l, key=lambda x: x["ida"][2])]
+        msgs.append(f"🏖️ <b>{estado}</b> — ida e volta até {fmt_reais(C.LIMITE_TRECHO)} cada\n\n"
+                    + "\n\n".join(cards))
+    return msgs
 
 
 def bloco_por_estado(todas):
-    linhas = ["🗺️ <b>Mais baratos por estado (ida e volta somadas, fins de semana/feriados 2027)</b>"]
+    """Resumo: uma mensagem por estado com as datas mais baratas."""
+    msgs = []
     for estado in C.NACIONAL:
         l = sorted([a for a in todas if a["cidade"] == estado], key=lambda x: x["total"])
         vistos, top = set(), []
@@ -329,40 +345,40 @@ def bloco_por_estado(todas):
             top.append(a)
             if len(top) >= C.TOP_POR_ESTADO:
                 break
+        cab = f"📍 <b>{estado}</b> — mais baratos (fins de semana/feriados 2027)"
         if not top:
-            linhas.append(f"\n📍 <b>{estado}</b>: ainda sem dados")
+            msgs.append(cab + "\nainda sem dados")
             continue
-        linhas.append(f"\n📍 <b>{estado}</b>")
-        for a in top:
-            (ci, ai, di), (cv, av, dv) = a["ida"], a["volta"]
-            linhas.append(f"  • <b>{fmt_reais(a['total'])}</b> — {html.escape(a['rotulo'])}")
-            linhas.append(linha_trecho("Ida  ", ci, C.ORIGEM, ai, di))
-            linhas.append(linha_trecho("Volta", cv, av, C.ORIGEM, dv))
-    return "\n".join(linhas)
+        msgs.append(cab + "\n\n" + "\n\n".join(
+            combo_nacional(a, f"{i}. {html.escape(a['rotulo'])}") for i, a in enumerate(top, 1)))
+    return msgs
 
 
-def bloco_ida_volta(res, so=None):
-    linhas = ["✈️ <b>Ida e volta — combinações mais baratas</b>"]
+def bloco_ida_volta(res, so=None, prefixo=""):
+    """Uma mensagem por rota de ida e volta."""
+    msgs = []
     for nome, r in res.items():
         if r["vazia"] or (so is not None and nome not in so):
             continue
         rota = r["rota"]
         detalhe = (f"{rota['dias_min']}–{rota['dias_max']} dias" if rota.get("dias_min") else "datas fixas")
-        linhas.append(f"\n{rota.get('emoji', '🌎')} <b>{html.escape(nome)}</b> <i>({detalhe}"
-                      + (f"; datas pesquisadas: {r['cobertura']:.0%}" if r["cobertura"] < 0.99 else "") + ")</i>")
+        cab = (prefixo + f"{rota.get('emoji', '🌎')} <b>{html.escape(nome)}</b> <i>({detalhe}"
+               + (f"; datas pesquisadas: {r['cobertura']:.0%}" if r["cobertura"] < 0.99 else "") + ")</i>")
         if not r["top"]:
-            linhas.append("  ainda sem dados suficientes")
+            msgs.append(cab + "\nainda sem dados suficientes")
             continue
+        cards = []
         for i, c in enumerate(r["top"], 1):
             (pi, oi, ai), (pv, av, ov) = c["ida"], c["volta"]
-            linhas.append(
-                f"  {i}. <b>{fmt_reais(c['total'])}</b> — {fmt_data(c['ida_data'])} → "
-                f"{fmt_data(c['volta_data'])} ({c['dias']} dias)\n"
-                f"     Ida {fmt_data(c['ida_data'])} {oi}→{ai} {fmt_reais(pi['preco'])} {info_voo(c['ida'])}\n"
-                f"      {links_html(oi, ai, c['ida_data'])}\n"
-                f"     Volta {fmt_data(c['volta_data'])} {av}→{ov} {fmt_reais(pv['preco'])} {info_voo(c['volta'])}\n"
-                f"      {links_html(av, ov, c['volta_data'])}")
-    return "\n".join(linhas)
+            cards.append("\n".join([
+                f"{i}. 💰 <b>{fmt_reais(c['total'])}</b> — {c['dias']} dias",
+                f"🛫 Ida {fmt_data(c['ida_data'])} {oi}→{ai} · {fmt_reais(pi['preco'])} · {info_voo(c['ida'])}",
+                f"🛬 Volta {fmt_data(c['volta_data'])} {av}→{ov} · {fmt_reais(pv['preco'])} · {info_voo(c['volta'])}",
+                f"🔗 Ida: {links_curtos(oi, ai, c['ida_data'])}",
+                f"🔗 Volta: {links_curtos(av, ov, c['volta_data'])}",
+            ]))
+        msgs.append(cab + "\n\n" + "\n\n".join(cards))
+    return msgs
 
 
 # ------------------------------------------------------------------ main
@@ -452,13 +468,13 @@ def main():
         partes.append("\n".join(linhas))
     else:
         if novos_nac:
-            partes.append(bloco_nacional(novos_nac))
+            partes += bloco_nacional(novos_nac)
         if resumo:
-            partes.append(bloco_por_estado(analisar_nacional(janelas, cot, todos=True)))
+            partes += bloco_por_estado(analisar_nacional(janelas, cot, todos=True))
         if resumo:
-            partes.append(bloco_ida_volta(rotas))
+            partes += bloco_ida_volta(rotas)
         elif novidades:
-            partes.append("🔔 <b>Novo menor preço!</b>\n" + bloco_ida_volta(rotas, so=novidades))
+            partes += bloco_ida_volta(rotas, so=novidades, prefixo="🔔 <b>Novo menor preço!</b>\n")
 
     # ---- milhas (opcional: Seats.aero Pro)
     if milhas.ativo():
@@ -496,7 +512,7 @@ def main():
 
     if partes:
         try:
-            enviar("\n\n".join(partes))
+            enviar(partes)
         except Exception:
             # não marca como "já avisado" se a mensagem não chegou: reenvia amanhã
             for k, v in backup.items():

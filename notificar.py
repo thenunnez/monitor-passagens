@@ -3,6 +3,7 @@ import html
 import json
 import os
 import re
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -49,6 +50,7 @@ def _para_texto(t):
 
 
 def _mandar(token, chat, texto, html_mode):
+    time.sleep(1.2)  # Telegram: no máx. ~1 mensagem por segundo no mesmo chat
     campos = {"chat_id": chat, "text": texto, "disable_web_page_preview": "true"}
     if html_mode:
         campos["parse_mode"] = "HTML"
@@ -90,16 +92,19 @@ def _enviar_html(token, chat, texto):
         _mandar(token, chat, p, html_mode=False)
 
 
-def enviar(texto: str):
+def enviar(texto):
+    """texto: uma string ou uma lista (cada item vira uma mensagem separada)."""
     token = os.environ.get("TELEGRAM_TOKEN", "").strip()
     chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
     if not token or not chat:
         print("---- (Telegram não configurado; mensagem abaixo) ----")
-        print(texto)
+        print("\n\n=====\n\n".join(texto) if isinstance(texto, list) else texto)
         return False
     _ERROS_HTML.clear()
-    for p in _dividir(texto.split("\n"), _cabe_html):
-        _enviar_html(token, chat, p)
+    mensagens = texto if isinstance(texto, list) else [texto]
+    for msg in mensagens:
+        for p in _dividir(msg.split("\n"), _cabe_html):
+            _enviar_html(token, chat, p)
     if _ERROS_HTML:
         _mandar(token, chat, "ℹ️ Aviso técnico (para o ajuste do monitor): o Telegram recusou parte da "
                 "formatação — " + _ERROS_HTML[0], html_mode=False)
