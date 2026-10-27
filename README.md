@@ -36,6 +36,14 @@ mensagem de teste no Telegram com 4 preços.
 Pronto. A partir daí roda todo dia por volta das 6h40. Nos primeiros ~4 dias ele vai preenchendo
 todas as datas (são ~2.300 buscas, feitas aos poucos para não ser bloqueado).
 
+## Links de compra
+Cada preço vem com links já preenchidos (rota + data) para **Google Flights, Kayak e Skyscanner**.
+
+**Opcional – link direto de compra (🛒):** crie uma conta em ignav.com, copie a API key e crie o
+secret `IGNAV_API_KEY` no GitHub. O monitor passa a mostrar o preço em reais do mercado brasileiro e um
+link para comprar direto na companhia (ou na agência mais barata) para os voos que aparecem na mensagem.
+1.000 consultas grátis; depois US$ 2 a cada 1.000 (limite de 25 trechos por dia em `config.py`).
+
 ## Como mudar algo
 Tudo fica em `config.py`: limite de R$ 240, aeroportos, meses, duração da viagem, feriados de BH.
 Para uma rota nova de ida e volta, copie um bloco da lista `IDA_E_VOLTA` e troque aeroportos e datas.

@@ -64,3 +64,4 @@ ATUALIZAR_A_CADA_DIAS = {
 DIAS_NACIONAL_PROXIMO = 45
 PAUSA_ENTRE_BUSCAS = (1.0, 2.5)  # segundos (aleatório)
 QUEDA_MINIMA_REALERTA = 10.00    # só avisa de novo se cair pelo menos R$ 10
+IGNAV_MAX_TRECHOS = 25           # máx. de trechos por rodada buscando link direto (cada um = 2 consultas na Ignav)

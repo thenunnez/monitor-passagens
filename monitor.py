@@ -18,7 +18,8 @@ from pathlib import Path
 
 import config as C
 from datas import janelas_fim_de_semana
-from fetcher import SemVoos, link_google, menor_preco
+import ignav
+from fetcher import SemVoos, link_google, link_kayak, link_skyscanner, menor_preco
 from notificar import enviar
 
 ESTADO = Path(__file__).parent / "data" / "estado.json"
@@ -247,10 +248,54 @@ def info_voo(c):
     return f"{cia}{escala}".strip()
 
 
+COMPRA = {}  # chave do trecho -> resultado da Ignav (link direto de compra)
+
+
+def links_html(o, d, data):
+    data = data.isoformat() if hasattr(data, "isoformat") else data
+    partes = []
+    c = COMPRA.get(chave(o, d, data))
+    if c and c.get("url"):
+        preco = fmt_reais(c["preco"]) if c.get("moeda") == "BRL" else f"{c['preco']:.0f} {c.get('moeda', '')}"
+        partes.append(f"🛒 <a href=\"{html.escape(c['url'])}\">Comprar na {html.escape(c.get('loja') or 'loja')}"
+                      f" ({preco})</a>")
+    partes.append(f"<a href=\"{link_google(o, d, data)}\">Google</a>")
+    partes.append(f"<a href=\"{link_kayak(o, d, data)}\">Kayak</a>")
+    partes.append(f"<a href=\"{link_skyscanner(o, d, data)}\">Skyscanner</a>")
+    return " · ".join(partes)
+
+
+def preparar_compra(est, trechos):
+    """Busca link direto (Ignav) para os trechos que vão na mensagem."""
+    if not ignav.ativo() or os.environ.get("FAKE") == "1":
+        return
+    cache = est.setdefault("compra", {})
+    agora = datetime.now(timezone.utc)
+    feitos = 0
+    for o, d, data in trechos:
+        data = data.isoformat() if hasattr(data, "isoformat") else data
+        k = chave(o, d, data)
+        c = cache.get(k)
+        if c and (agora - datetime.fromisoformat(c["quando"])).total_seconds() < 20 * 3600:
+            COMPRA[k] = c
+            continue
+        if feitos >= C.IGNAV_MAX_TRECHOS:
+            continue
+        feitos += 1
+        try:
+            r = ignav.comprar(o, d, data)
+        except Exception as e:
+            print(f"[ignav] {k}: {type(e).__name__}: {e}")
+            continue
+        if r:
+            cache[k] = COMPRA[k] = r
+    for k in [k for k in cache if k[-10:] < hoje().isoformat()]:
+        del cache[k]
+
+
 def linha_trecho(rot, cot, o, d, data):
-    link = link_google(o, d, data.isoformat() if hasattr(data, "isoformat") else data)
     return (f"  {rot} {fmt_data(data)} {o}→{d}: <b>{fmt_reais(cot['preco'])}</b> "
-            f"({info_voo((cot, o, d))}) <a href=\"{link}\">ver</a>")
+            f"({info_voo((cot, o, d))})\n      {links_html(o, d, data)}")
 
 
 def bloco_nacional(achados):
@@ -282,13 +327,13 @@ def bloco_ida_volta(res, so=None):
             continue
         for i, c in enumerate(r["top"], 1):
             (pi, oi, ai), (pv, av, ov) = c["ida"], c["volta"]
-            li = link_google(oi, ai, c["ida_data"].isoformat())
-            lv = link_google(av, ov, c["volta_data"].isoformat())
             linhas.append(
                 f"  {i}. <b>{fmt_reais(c['total'])}</b> — {fmt_data(c['ida_data'])} → "
                 f"{fmt_data(c['volta_data'])} ({c['dias']} dias)\n"
-                f"     ida {oi}→{ai} {fmt_reais(pi['preco'])} {info_voo(c['ida'])} <a href=\"{li}\">ver</a> · "
-                f"volta {av}→{ov} {fmt_reais(pv['preco'])} {info_voo(c['volta'])} <a href=\"{lv}\">ver</a>")
+                f"     Ida {fmt_data(c['ida_data'])} {oi}→{ai} {fmt_reais(pi['preco'])} {info_voo(c['ida'])}\n"
+                f"      {links_html(oi, ai, c['ida_data'])}\n"
+                f"     Volta {fmt_data(c['volta_data'])} {av}→{ov} {fmt_reais(pv['preco'])} {info_voo(c['volta'])}\n"
+                f"      {links_html(av, ov, c['volta_data'])}")
     return "\n".join(linhas)
 
 
@@ -342,6 +387,21 @@ def main():
     salvar_estado(est)
 
     resumo = modo in ("teste", "resumo") or datetime.now(BRT).weekday() == 0  # segunda = resumo semanal
+
+    # trechos que vão aparecer na mensagem -> link direto de compra
+    trechos = []
+    nac_msg = novos_nac or (nacional if resumo else [])
+    for a in sorted(nac_msg, key=lambda x: x["total"])[:15]:
+        trechos += [(C.ORIGEM, a["ida"][1], a["ida"][2]), (a["volta"][1], C.ORIGEM, a["volta"][2])]
+    for nome, r in rotas.items():
+        if resumo or nome in novidades:
+            for c in r["top"]:
+                trechos += [(c["ida"][1], c["ida"][2], c["ida_data"]), (c["volta"][1], c["volta"][2], c["volta_data"])]
+    if modo == "teste":
+        trechos = [(o, d, data) for o, d, data, _ in pendentes]
+    preparar_compra(est, trechos)
+    salvar_estado(est)
+
     partes = []
     if modo == "teste":
         linhas = ["🧪 <b>Teste do monitor</b>",
@@ -350,13 +410,17 @@ def main():
             c = cot.get(chave(o, d, data))
             if c and c.get("preco") is not None:
                 linhas.append(f"• {o}→{d} {fmt_data(data)}: {fmt_reais(c['preco'])} "
-                              f"({info_voo((c, o, d))}, cotado em {c.get('moeda_original', '?')})")
+                              f"({info_voo((c, o, d))}, cotado em {c.get('moeda_original', '?')})\n"
+                              f"   {links_html(o, d, data)}")
             elif c:
                 linhas.append(f"• {o}→{d} {fmt_data(data)}: sem voos")
         if erros:
             linhas.append(f"⚠️ Último erro: <code>{html.escape(ultimo_erro)}</code>")
         else:
             linhas.append("✅ Tudo funcionando. A rodada diária vai preencher o resto nos próximos dias.")
+        linhas.append("🛒 Link direto de compra (Ignav): " + (
+            f"ativo ({sum(1 for k in COMPRA if COMPRA[k].get('url'))} links obtidos)" if ignav.ativo()
+            else "desligado — crie o secret IGNAV_API_KEY para ativar"))
         partes.append("\n".join(linhas))
     else:
         if novos_nac:

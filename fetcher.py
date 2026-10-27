@@ -180,4 +180,14 @@ def menor_preco(origem: str, destino: str, data: str):
 
 def link_google(origem: str, destino: str, data: str) -> str:
     q = f"Flights from {origem} to {destino} on {data} one way"
-    return "https://www.google.com/travel/flights?hl=pt-BR&curr=BRL&q=" + urllib.request.quote(q)
+    return "https://www.google.com/travel/flights?hl=pt-BR&curr=BRL&gl=BR&q=" + urllib.request.quote(q)
+
+
+def link_kayak(origem: str, destino: str, data: str) -> str:
+    return f"https://www.kayak.com.br/flights/{origem}-{destino}/{data}?sort=price_a"
+
+
+def link_skyscanner(origem: str, destino: str, data: str) -> str:
+    aammdd = data[2:4] + data[5:7] + data[8:10]
+    return (f"https://www.skyscanner.com.br/transporte/passagens-aereas/{origem.lower()}/"
+            f"{destino.lower()}/{aammdd}/?adultsv2=1&cabinclass=economy&rtn=0")
