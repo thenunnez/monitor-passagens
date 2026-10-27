@@ -170,6 +170,9 @@ def executar_buscas(pendentes, cotacoes):
             if seguidos >= 12:
                 print("[parando] muitos erros seguidos — possível bloqueio")
                 break
+            if seguidos in (3, 6, 9) and os.environ.get("FAKE") != "1":
+                print("[pausa] erros seguidos — esperando 2 minutos antes de continuar")
+                time.sleep(120)
         if os.environ.get("FAKE") != "1" and i < len(pendentes) - 1:
             time.sleep(random.uniform(*C.PAUSA_ENTRE_BUSCAS))
     return ok, sem, erros, ultimo_erro, seguidos >= 12

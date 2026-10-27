@@ -1,1 +1,1 @@
-fast-flights==2.2
+fast-flights @ git+https://github.com/AWeirdDev/flights@v3.1.0

@@ -54,7 +54,7 @@ def ler_preco(texto: str):
 
 
 _PRIMP_OK = False
-_NAVEGADORES = ["chrome_133", "chrome_131", "chrome_130", "chrome_128", "chrome_127",
+_NAVEGADORES = ["chrome_145", "chrome_142", "chrome_137", "chrome_133", "chrome_131", "chrome_130", "chrome_128", "chrome_127",
                 "chrome", "chrome_126", "random", None]
 
 
@@ -109,6 +109,16 @@ def _corrigir_primp():
                 escolhido["imp"] = imp
                 print(f"[primp {getattr(primp, '__version__', '?')}] usando impersonate={imp}")
                 return c
+            except TypeError as e:  # argumento que esta versão do primp não conhece
+                for extra in ("impersonate_os", "referer", "cookie_store"):
+                    kwargs.pop(extra, None)
+                ultimo = e
+                try:
+                    c = original(*args, **{**kwargs, "impersonate": imp} if imp else kwargs)
+                    escolhido["imp"] = imp
+                    return c
+                except Exception as e2:
+                    ultimo = e2
             except Exception as e:  # BuilderError: Invalid impersonate
                 ultimo = e
         raise ultimo
@@ -121,23 +131,57 @@ def _corrigir_primp():
     _PRIMP_OK = True
 
 
+class Bloqueado(Exception):
+    """O Google devolveu uma página sem os dados de voos (limite/bloqueio/captcha)."""
+
+
 def _buscar_real(origem: str, destino: str, data: str):
     _corrigir_primp()
-    from fast_flights import FlightData, Passengers, get_flights
+    import fast_flights as ff
 
+    if hasattr(ff, "create_query"):  # fast-flights 3.x (lê os dados direto da página do Google)
+        q = ff.create_query(
+            flights=[ff.FlightQuery(date=data, from_airport=origem, to_airport=destino)],
+            trip="one-way", seat="economy", passengers=ff.Passengers(adults=1),
+            currency="BRL", language="pt-BR")
+        try:
+            resultado = ff.get_flights(q)
+        except ff.FlightsNotFound as e:
+            raise SemVoos() from e
+        except (AttributeError, IndexError, TypeError, ValueError) as e:
+            # página sem o bloco de dados: normalmente limite de acessos do Google
+            raise Bloqueado(f"página do Google sem dados ({type(e).__name__})") from e
+        melhor = None
+        for f in resultado or []:
+            preco = getattr(f, "price", None)
+            if not isinstance(preco, (int, float)) or preco <= 0:
+                continue
+            if melhor is None or preco < melhor["preco"]:
+                trechos = getattr(f, "flights", None) or []
+                cias = [c for c in (getattr(f, "airlines", None) or []) if c]
+                saida = ""
+                if trechos and getattr(trechos[0], "departure", None):
+                    hh, mm = trechos[0].departure.time
+                    saida = f"{hh:02d}:{mm:02d}"
+                melhor = {"preco": float(preco), "moeda_original": "BRL",
+                          "cia": " + ".join(dict.fromkeys(cias)), "saida": saida,
+                          "paradas": max(len(trechos) - 1, 0) if trechos else None}
+        if melhor is None:
+            raise SemVoos()
+        return melhor
+
+    # fast-flights 2.x (versão antiga)
     kwargs = dict(
-        flight_data=[FlightData(date=data, from_airport=origem, to_airport=destino)],
+        flight_data=[ff.FlightData(date=data, from_airport=origem, to_airport=destino)],
         trip="one-way",
         seat="economy",
-        passengers=Passengers(adults=1),
+        passengers=ff.Passengers(adults=1),
     )
-    params = inspect.signature(get_flights).parameters
+    params = inspect.signature(ff.get_flights).parameters
     if "fetch_mode" in params:
-        kwargs["fetch_mode"] = "fallback"
-    if "currency" in params:
-        kwargs["currency"] = "BRL"
+        kwargs["fetch_mode"] = "common"
     try:
-        resultado = get_flights(**kwargs)
+        resultado = ff.get_flights(**kwargs)
     except Exception as e:
         if "no flights" in str(e).lower():
             raise SemVoos() from e
