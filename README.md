@@ -44,6 +44,12 @@ secret `IGNAV_API_KEY` no GitHub. O monitor passa a mostrar o preço em reais do
 link para comprar direto na companhia (ou na agência mais barata) para os voos que aparecem na mensagem.
 1.000 consultas grátis; depois US$ 2 a cada 1.000 (limite de 25 trechos por dia em `config.py`).
 
+## Milhas (opcional)
+Com assinatura **Seats.aero Pro** (US$ 9,99/mês) e acesso à API liberado na conta, crie o secret
+`SEATS_AERO_KEY` com a chave (Seats.aero → Settings → API). O monitor passa a mostrar as melhores
+combinações em milhas da **Smiles** e da **Azul Fidelidade** (econômica, sem taxas) para todas as rotas.
+LATAM Pass não é coberto. Usa ~10 chamadas por dia (limite do Pro: 1.000/dia).
+
 ## Como mudar algo
 Tudo fica em `config.py`: limite de R$ 240, aeroportos, meses, duração da viagem, feriados de BH.
 Para uma rota nova de ida e volta, copie um bloco da lista `IDA_E_VOLTA` e troque aeroportos e datas.

@@ -19,6 +19,7 @@ from pathlib import Path
 import config as C
 from datas import janelas_fim_de_semana
 import ignav
+import milhas
 from fetcher import SemVoos, link_google, link_kayak, link_skyscanner, menor_preco
 from notificar import enviar
 
@@ -433,6 +434,36 @@ def main():
             partes.append(bloco_ida_volta(rotas))
         elif novidades:
             partes.append("🔔 <b>Novo menor preço!</b>\n" + bloco_ida_volta(rotas, so=novidades))
+
+    # ---- milhas (opcional: Seats.aero Pro)
+    if milhas.ativo():
+        try:
+            pares = {r["nome"]: datas_rota(r, hoje()) for r in C.IDA_E_VOLTA}
+            rm, n = milhas.analisar(C, janelas, pares)
+            print(f"[milhas] {n} chamadas ao Seats.aero")
+            melhor_mi = est.setdefault("melhor_milhas", {})
+            novas = set()
+            grupos = {"nacional": rm["nacional"], **rm["rotas"]}
+            for nome, lista in grupos.items():
+                for prog in milhas.PROGRAMAS:
+                    l = [c for c in lista if c["prog"] == prog]
+                    if not l:
+                        continue
+                    k, t = f"{nome}|{prog}", l[0]["total"]
+                    if k not in melhor_mi or t < melhor_mi[k] * 0.97:
+                        novas.add(nome)
+                    melhor_mi[k] = min(t, melhor_mi.get(k, t))
+            salvar_estado(est)
+            if modo == "teste":
+                partes.append(milhas.bloco(rm, fmt_data, n_nac=3, n_rota=1))
+            elif resumo:
+                partes.append(milhas.bloco(rm, fmt_data))
+            elif novas:
+                partes.append("🔔 <b>Novo menor preço em milhas!</b>\n" + milhas.bloco(rm, fmt_data, so=novas))
+        except Exception as e:
+            partes.append(f"⚠️ Busca de milhas falhou: <code>{html.escape(f'{type(e).__name__}: {e}'[:300])}</code>")
+    elif modo == "teste":
+        partes.append("🎟️ Milhas (Seats.aero): desligado — crie o secret SEATS_AERO_KEY para ativar")
 
     if bloqueado:
         partes.append("⚠️ Muitas buscas falharam seguidas hoje (o Google pode estar bloqueando). "
