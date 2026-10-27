@@ -70,7 +70,26 @@ def _corrigir_primp():
     original = primp.Client
     escolhido = {}
 
+    class ClienteBrasil:
+        """Repassa tudo ao Client real, mas força preços em R$ vendidos no Brasil."""
+        def __init__(self, c):
+            self._c = c
+
+        def __getattr__(self, nome):
+            return getattr(self._c, nome)
+
+        def get(self, url, *args, **kwargs):
+            if "google." in str(url) and "/travel/flights" in str(url):
+                params = dict(kwargs.get("params") or {})
+                params["curr"] = "BRL"
+                params["gl"] = "BR"
+                kwargs["params"] = params
+            return self._c.get(url, *args, **kwargs)
+
     def client_compat(*args, **kwargs):
+        return ClienteBrasil(_criar(*args, **kwargs))
+
+    def _criar(*args, **kwargs):
         if "imp" in escolhido:
             if escolhido["imp"] is None:
                 kwargs.pop("impersonate", None)
@@ -135,7 +154,7 @@ def _buscar_real(origem: str, destino: str, data: str):
                 "moeda_original": p[1],
                 "cia": getattr(f, "name", "") or "",
                 "saida": getattr(f, "departure", "") or "",
-                "paradas": getattr(f, "stops", None),
+                "paradas": getattr(f, "stops", None) if isinstance(getattr(f, "stops", None), int) else None,
             }
     if melhor is None:
         raise SemVoos()

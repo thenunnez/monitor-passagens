@@ -205,7 +205,7 @@ def info_voo(c):
     p, o, d = c[0], c[1], c[2] if len(c) > 2 else None
     cia = html.escape(p.get("cia") or "")
     paradas = p.get("paradas")
-    escala = "" if paradas in (None, "") else (" direto" if paradas == 0 else f" {paradas} parada(s)")
+    escala = "" if not isinstance(paradas, int) else (" direto" if paradas == 0 else f" {paradas} parada(s)")
     return f"{cia}{escala}".strip()
 
 
