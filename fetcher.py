@@ -53,7 +53,57 @@ def ler_preco(texto: str):
     return round(valor * taxa_para_brl(moeda), 2), moeda
 
 
+_PRIMP_OK = False
+_NAVEGADORES = ["chrome_133", "chrome_131", "chrome_130", "chrome_128", "chrome_127",
+                "chrome", "chrome_126", "random", None]
+
+
+def _corrigir_primp():
+    """O fast-flights pede impersonate='chrome_126', que versões novas do primp
+    não aceitam. Troca o Client do primp por um que tenta versões válidas.
+    Precisa rodar ANTES de importar fast_flights."""
+    global _PRIMP_OK
+    if _PRIMP_OK:
+        return
+    import primp
+
+    original = primp.Client
+    escolhido = {}
+
+    def client_compat(*args, **kwargs):
+        if "imp" in escolhido:
+            if escolhido["imp"] is None:
+                kwargs.pop("impersonate", None)
+            else:
+                kwargs["impersonate"] = escolhido["imp"]
+            return original(*args, **kwargs)
+        pedido = kwargs.get("impersonate")
+        ultimo = None
+        for imp in [pedido] + [n for n in _NAVEGADORES if n != pedido]:
+            kw = dict(kwargs)
+            if imp is None:
+                kw.pop("impersonate", None)
+            else:
+                kw["impersonate"] = imp
+            try:
+                c = original(*args, **kw)
+                escolhido["imp"] = imp
+                print(f"[primp {getattr(primp, '__version__', '?')}] usando impersonate={imp}")
+                return c
+            except Exception as e:  # BuilderError: Invalid impersonate
+                ultimo = e
+        raise ultimo
+
+    primp.Client = client_compat
+    import sys
+    for nome, mod in list(sys.modules.items()):  # caso fast_flights já tenha importado
+        if nome.startswith("fast_flights") and getattr(mod, "Client", None) is original:
+            mod.Client = client_compat
+    _PRIMP_OK = True
+
+
 def _buscar_real(origem: str, destino: str, data: str):
+    _corrigir_primp()
     from fast_flights import FlightData, Passengers, get_flights
 
     kwargs = dict(
