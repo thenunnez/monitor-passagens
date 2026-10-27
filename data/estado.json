@@ -1,6 +1,57 @@
 {
- "alertas": {},
+ "alertas": {
+  "N|São Paulo|2027-01-08": 450.0,
+  "N|São Paulo|2027-01-15": 450.0,
+  "N|São Paulo|2027-01-22": 448.0,
+  "N|São Paulo|2027-01-29": 446.0,
+  "N|São Paulo|2027-02-05": 446.0,
+  "N|São Paulo|2027-02-12": 446.0,
+  "N|São Paulo|2027-02-19": 446.0,
+  "N|São Paulo|2027-02-26": 446.0,
+  "N|São Paulo|2027-03-05": 446.0,
+  "N|São Paulo|2027-03-12": 446.0
+ },
  "compra": {
+  "CGB-CNF-2026-12-25": {
+   "cia": "LATAM",
+   "loja": "LATAM",
+   "moeda": "BRL",
+   "preco": 983.0,
+   "quando": "2026-10-27T10:48:25.204197+00:00",
+   "saida": "10:20",
+   "tipo": "airline",
+   "url": "https://www.latamairlines.com/br/pt/oferta-voos?dataFlight=%7B%22tripTypeSelected%22:%7B%22value%22:%22OW%22%7D,%22cabinSelected%22:%7B%22label%22:%22Economy%22,%22value%22:%22Economy%22%7D,%22passengerSelected%22:%7B%22adultQuantity%22:1,%22childrenQuantity%22:0,%22infantQuantity%22:0%7D,%22originSelected%22:%7B%22id%22:%22CGB_BR_AIRPORT%22,%22iata%22:%22CGB%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CGB%22%7D,%22destinationSelected%22:%7B%22id%22:%22CNF_BR_AIRPORT%22,%22iata%22:%22CNF%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CNF%22%7D,%22dateGoSelected%22:%222026-12-25%22,%22dateReturnSelected%22:null%7D&sort=PRICE,asc&utm_medium=metasearch&utm_source=gfs&utm_campaign=br_latam_gfs_metasearch_perf_aon&utm_content=br_latam_perf_gfs_aon_nn_CGB_CNF_domestic_conversion_core_desktop&gclid=AAcRjHIOPGMzKPwyI5qsys5GPBvj2TB1tIgBGdD5X6Tyf2YFZfzVZXXHK_DZo36jzTtLdcSQ7t3pSl4NHPhvawXaLD8CFrEKnmUXWr13jTyOXA3gRaU&gclsrc=gf"
+  },
+  "CGB-CNF-2027-01-25": {
+   "cia": "Gol",
+   "loja": "Gol",
+   "moeda": "BRL",
+   "preco": 516.0,
+   "quando": "2026-10-27T10:47:50.810117+00:00",
+   "saida": "04:45",
+   "tipo": "airline",
+   "url": "https://b2c.voegol.com.br/compra/busca-parceiros?pv=BR&tipo=DF&de=CGB&para=CNF&ida=25-01-2027&ADT=1&CHD=0&INF=0&tarifaSelecionada=&vooSelecionado1=G31715-G31794-G31123-G31318%7C51565BRL&utm_source=google&utm_medium=google-flightsearch&utm_campaign=national&gclid=AAcRjHLmSlac9a-sVMGNHgjCzzeaGi_UHOTYuzrkps3asu-y_a46zmpdYdwEOuv6pkrkiJvgXOD293O5gkO6d0WG0b_GzugKvdfJNEyZPD3EplksanA&gclsrc=gf"
+  },
+  "CGB-CNF-2027-01-26": {
+   "cia": "Gol",
+   "loja": "Gol",
+   "moeda": "BRL",
+   "preco": 516.0,
+   "quando": "2026-10-27T10:48:11.260436+00:00",
+   "saida": "04:45",
+   "tipo": "airline",
+   "url": "https://b2c.voegol.com.br/compra/busca-parceiros?pv=BR&tipo=DF&de=CGB&para=CNF&ida=26-01-2027&ADT=1&CHD=0&INF=0&tarifaSelecionada=&vooSelecionado1=G31715-G31750-G31385-G31486%7C51565BRL&utm_source=google&utm_medium=google-flightsearch&utm_campaign=national&gclid=AAcRjHKBr1HVItbgUa2GoQj0Zqm0fGa1tCubSO11Uevp_CukBYdnOt4RBJn4j2wYZ2tkwjSNfrex3UmdqZrlyM0k9AL1GvEqoRtUrPqIJTuL0Z643VY&gclsrc=gf"
+  },
+  "CGB-CNF-2027-01-29": {
+   "cia": "Gol",
+   "loja": "Gol",
+   "moeda": "BRL",
+   "preco": 516.0,
+   "quando": "2026-10-27T10:48:17.571245+00:00",
+   "saida": "04:45",
+   "tipo": "airline",
+   "url": "https://b2c.voegol.com.br/compra/busca-parceiros?pv=BR&tipo=DF&de=CGB&para=CNF&ida=29-01-2027&ADT=1&CHD=0&INF=0&tarifaSelecionada=&vooSelecionado1=G31715-G31746-G31435-G31314%7C51565BRL&utm_source=google&utm_medium=google-flightsearch&utm_campaign=national&gclid=AAcRjHJQRdUywjmosA71ezswHkcdLIKY3isdzTrjoGjfW5PnOl-FR25lQkny1LL7Kz-CRzA15thBW_vbE4ysqY4nviGbAWdAq87BgADz5vqoyqwFP2Y&gclsrc=gf"
+  },
   "CNF-CGB-2026-12-18": {
    "cia": "LATAM",
    "loja": "LATAM",
@@ -10,6 +61,36 @@
    "saida": "06:20",
    "tipo": "airline",
    "url": "https://www.latamairlines.com/br/pt/oferta-voos?dataFlight=%7B%22tripTypeSelected%22:%7B%22value%22:%22OW%22%7D,%22cabinSelected%22:%7B%22label%22:%22Economy%22,%22value%22:%22Economy%22%7D,%22passengerSelected%22:%7B%22adultQuantity%22:1,%22childrenQuantity%22:0,%22infantQuantity%22:0%7D,%22originSelected%22:%7B%22id%22:%22CNF_BR_AIRPORT%22,%22iata%22:%22CNF%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CNF%22%7D,%22destinationSelected%22:%7B%22id%22:%22CGB_BR_AIRPORT%22,%22iata%22:%22CGB%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CGB%22%7D,%22dateGoSelected%22:%222026-12-18%22,%22dateReturnSelected%22:null%7D&sort=PRICE,asc&utm_medium=metasearch&utm_source=gfs&utm_campaign=br_latam_gfs_metasearch_perf_aon&utm_content=br_latam_perf_gfs_aon_nn_CNF_CGB_domestic_conversion_core_desktop&gclid=AAcRjHLhZ6rAUE_Tj3h9U1-bVXkzZp_MihPjDkwgoPDspNtadKCXRFKa1o2xR0rG6KgRUqyo5i031SfIDdQsr4PNTbaytJq13X-75Lk24jmhRP7S3U0&gclsrc=gf"
+  },
+  "CNF-CGB-2026-12-19": {
+   "cia": "LATAM",
+   "loja": "LATAM",
+   "moeda": "BRL",
+   "preco": 876.0,
+   "quando": "2026-10-27T10:48:33.888288+00:00",
+   "saida": "17:55",
+   "tipo": "airline",
+   "url": "https://www.latamairlines.com/br/pt/oferta-voos?dataFlight=%7B%22tripTypeSelected%22:%7B%22value%22:%22OW%22%7D,%22cabinSelected%22:%7B%22label%22:%22Economy%22,%22value%22:%22Economy%22%7D,%22passengerSelected%22:%7B%22adultQuantity%22:1,%22childrenQuantity%22:0,%22infantQuantity%22:0%7D,%22originSelected%22:%7B%22id%22:%22CNF_BR_AIRPORT%22,%22iata%22:%22CNF%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CNF%22%7D,%22destinationSelected%22:%7B%22id%22:%22CGB_BR_AIRPORT%22,%22iata%22:%22CGB%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CGB%22%7D,%22dateGoSelected%22:%222026-12-19%22,%22dateReturnSelected%22:null%7D&sort=PRICE,asc&utm_medium=metasearch&utm_source=gfs&utm_campaign=br_latam_gfs_metasearch_perf_aon&utm_content=br_latam_perf_gfs_aon_nn_CNF_CGB_domestic_conversion_core_desktop&gclid=AAcRjHLAZSOn_6G40zn_MfB6Bg2kfsz2kbd_tt8RBRRBRaYx761NNCO9I_YArtKSiYwDwzI3JrWJU6BZ0XonM6289L6wQuRttIUK9X9qtbN8diPd5sk&gclsrc=gf"
+  },
+  "CNF-CGB-2026-12-20": {
+   "cia": "LATAM",
+   "loja": "LATAM",
+   "moeda": "BRL",
+   "preco": 876.0,
+   "quando": "2026-10-27T10:48:39.466757+00:00",
+   "saida": "06:55",
+   "tipo": "airline",
+   "url": "https://www.latamairlines.com/br/pt/oferta-voos?dataFlight=%7B%22tripTypeSelected%22:%7B%22value%22:%22OW%22%7D,%22cabinSelected%22:%7B%22label%22:%22Economy%22,%22value%22:%22Economy%22%7D,%22passengerSelected%22:%7B%22adultQuantity%22:1,%22childrenQuantity%22:0,%22infantQuantity%22:0%7D,%22originSelected%22:%7B%22id%22:%22CNF_BR_AIRPORT%22,%22iata%22:%22CNF%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CNF%22%7D,%22destinationSelected%22:%7B%22id%22:%22CGB_BR_AIRPORT%22,%22iata%22:%22CGB%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CGB%22%7D,%22dateGoSelected%22:%222026-12-20%22,%22dateReturnSelected%22:null%7D&sort=PRICE,asc&utm_medium=metasearch&utm_source=gfs&utm_campaign=br_latam_gfs_metasearch_perf_aon&utm_content=br_latam_perf_gfs_aon_nn_CNF_CGB_domestic_conversion_core_desktop&gclid=AAcRjHJnNo0z3c8BQ9z1PKBvSiffeYhlQMZflor3dgPFkE4fnRI6J_ydb7KREHMzq7fRPxQSJH9FfMvsyIY51sx0wTwMOGzsQaagjj80Ww0gn4mlZeA&gclsrc=gf"
+  },
+  "CNF-CGB-2027-02-04": {
+   "cia": "Gol",
+   "loja": "Gol",
+   "moeda": "BRL",
+   "preco": 503.0,
+   "quando": "2026-10-27T10:48:00.328365+00:00",
+   "saida": "09:40",
+   "tipo": "airline",
+   "url": "https://b2c.voegol.com.br/compra/busca-parceiros?pv=BR&tipo=DF&de=CNF&para=CGB&ida=04-02-2027&ADT=1&CHD=0&INF=0&tarifaSelecionada=&vooSelecionado1=G31309-G31114-G31743-G31714%7C50205BRL&utm_source=google&utm_medium=google-flightsearch&utm_campaign=national&gclid=AAcRjHLQ49PfEq6rJS565ZSvC0nsAiAcDCqG-Kk-xIv_V20xmWb0M5Z6CkLoCfS13L-L0ZwwJUvQ5ngzRLTB0QV9wK9cbXoRkiuNuAOXATOji51HVZk&gclsrc=gf"
   },
   "CNF-GIG-2027-01-08": {
    "cia": "Gol",
@@ -43,6 +124,1286 @@
   }
  },
  "cotacoes": {
+  "BPS-CNF-2027-01-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 828.0,
+   "quando": "2026-10-27T10:17:27.939869+00:00",
+   "saida": ""
+  },
+  "BPS-CNF-2027-01-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 828.0,
+   "quando": "2026-10-27T10:18:10.277983+00:00",
+   "saida": "9:45 AM on Mon, Jan 11"
+  },
+  "BPS-CNF-2027-01-17": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 828.0,
+   "quando": "2026-10-27T10:20:29.303586+00:00",
+   "saida": ""
+  },
+  "BPS-CNF-2027-01-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 576.0,
+   "quando": "2026-10-27T10:21:12.182366+00:00",
+   "saida": "4:50 AM on Mon, Jan 18"
+  },
+  "BPS-CNF-2027-01-24": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 576.0,
+   "quando": "2026-10-27T10:23:40.429293+00:00",
+   "saida": ""
+  },
+  "BPS-CNF-2027-01-25": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 537.0,
+   "quando": "2026-10-27T10:24:26.733397+00:00",
+   "saida": ""
+  },
+  "BPS-CNF-2027-01-31": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 562.0,
+   "quando": "2026-10-27T10:26:56.617710+00:00",
+   "saida": "10:50 PM on Sun, Jan 31"
+  },
+  "BPS-CNF-2027-02-09": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 708.0,
+   "quando": "2026-10-27T10:30:04.921927+00:00",
+   "saida": "4:45 AM on Tue, Feb 9"
+  },
+  "BPS-CNF-2027-02-10": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 1297.0,
+   "quando": "2026-10-27T10:30:45.996240+00:00",
+   "saida": "12:05 PM on Wed, Feb 10"
+  },
+  "BPS-CNF-2027-02-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 828.0,
+   "quando": "2026-10-27T10:32:58.275230+00:00",
+   "saida": ""
+  },
+  "BPS-CNF-2027-02-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 828.0,
+   "quando": "2026-10-27T10:33:41.017768+00:00",
+   "saida": ""
+  },
+  "BPS-CNF-2027-02-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 537.0,
+   "quando": "2026-10-27T10:35:59.361714+00:00",
+   "saida": ""
+  },
+  "BPS-CNF-2027-02-22": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 537.0,
+   "quando": "2026-10-27T10:36:44.811583+00:00",
+   "saida": "4:45 AM on Mon, Feb 22"
+  },
+  "BPS-CNF-2027-02-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 665.0,
+   "quando": "2026-10-27T10:39:08.101161+00:00",
+   "saida": ""
+  },
+  "BPS-CNF-2027-03-01": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 487.0,
+   "quando": "2026-10-27T10:39:46.407095+00:00",
+   "saida": "6:10 PM on Mon, Mar 1"
+  },
+  "BPS-CNF-2027-03-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 537.0,
+   "quando": "2026-10-27T10:42:10.358745+00:00",
+   "saida": ""
+  },
+  "BPS-CNF-2027-03-08": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 487.0,
+   "quando": "2026-10-27T10:42:52.510078+00:00",
+   "saida": ""
+  },
+  "BPS-CNF-2027-03-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 537.0,
+   "quando": "2026-10-27T10:45:17.166385+00:00",
+   "saida": ""
+  },
+  "BPS-CNF-2027-03-15": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 697.0,
+   "quando": "2026-10-27T10:46:01.041848+00:00",
+   "saida": "12:10 PM on Mon, Mar 15"
+  },
+  "CGB-CNF-2026-12-24": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 1045.0,
+   "quando": "2026-10-27T10:15:02.433789+00:00",
+   "saida": "6:05 PM on Thu, Dec 24"
+  },
+  "CGB-CNF-2026-12-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 983.0,
+   "quando": "2026-10-27T10:15:06.885118+00:00",
+   "saida": "10:20 AM on Fri, Dec 25"
+  },
+  "CGB-CNF-2026-12-26": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 1379.0,
+   "quando": "2026-10-27T10:15:11.252024+00:00",
+   "saida": "1:45 AM on Sat, Dec 26"
+  },
+  "CGB-CNF-2027-01-01": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 803.0,
+   "quando": "2026-10-27T10:15:14.019097+00:00",
+   "saida": "11:15 AM on Fri, Jan 1"
+  },
+  "CGB-CNF-2027-01-02": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 803.0,
+   "quando": "2026-10-27T10:15:16.965544+00:00",
+   "saida": "2:55 AM on Sat, Jan 2"
+  },
+  "CGB-CNF-2027-01-03": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 887.0,
+   "quando": "2026-10-27T10:15:19.434799+00:00",
+   "saida": "2:50 AM on Sun, Jan 3"
+  },
+  "CGB-CNF-2027-01-04": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 887.0,
+   "quando": "2026-10-27T10:15:22.196072+00:00",
+   "saida": "2:25 AM on Mon, Jan 4"
+  },
+  "CGB-CNF-2027-01-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 803.0,
+   "quando": "2026-10-27T10:15:25.286263+00:00",
+   "saida": "2:50 AM on Tue, Jan 5"
+  },
+  "CGB-CNF-2027-01-06": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 803.0,
+   "quando": "2026-10-27T10:15:28.032375+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-01-07": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 803.0,
+   "quando": "2026-10-27T10:16:11.744303+00:00",
+   "saida": "2:50 AM on Thu, Jan 7"
+  },
+  "CGB-CNF-2027-01-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:16:52.720654+00:00",
+   "saida": "1:50 AM on Fri, Jan 8"
+  },
+  "CGB-CNF-2027-01-09": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 803.0,
+   "quando": "2026-10-27T10:16:58.253474+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-01-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 803.0,
+   "quando": "2026-10-27T10:17:36.047353+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-01-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:18:17.595037+00:00",
+   "saida": "4:45 AM on Mon, Jan 11"
+  },
+  "CGB-CNF-2027-01-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:18:23.249020+00:00",
+   "saida": "11:10 AM on Tue, Jan 12"
+  },
+  "CGB-CNF-2027-01-13": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 767.0,
+   "quando": "2026-10-27T10:18:27.163052+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-01-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:19:06.880097+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-01-15": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 803.0,
+   "quando": "2026-10-27T10:19:47.856377+00:00",
+   "saida": "2:50 AM on Fri, Jan 15"
+  },
+  "CGB-CNF-2027-01-17": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 706.0,
+   "quando": "2026-10-27T10:20:39.458009+00:00",
+   "saida": "5:10 AM on Sun, Jan 17"
+  },
+  "CGB-CNF-2027-01-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:21:20.565883+00:00",
+   "saida": "4:45 AM on Mon, Jan 18"
+  },
+  "CGB-CNF-2027-01-19": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:21:25.550509+00:00",
+   "saida": "11:10 AM on Tue, Jan 19"
+  },
+  "CGB-CNF-2027-01-20": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:21:32.290574+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-01-21": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:22:13.175415+00:00",
+   "saida": "11:10 AM on Thu, Jan 21"
+  },
+  "CGB-CNF-2027-01-22": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:22:57.145154+00:00",
+   "saida": "4:45 AM on Fri, Jan 22"
+  },
+  "CGB-CNF-2027-01-23": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:23:02.636346+00:00",
+   "saida": "1:45 AM on Sat, Jan 23"
+  },
+  "CGB-CNF-2027-01-24": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:23:48.011787+00:00",
+   "saida": "4:30 AM on Sun, Jan 24"
+  },
+  "CGB-CNF-2027-01-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:24:35.291687+00:00",
+   "saida": "4:45 AM on Mon, Jan 25"
+  },
+  "CGB-CNF-2027-01-26": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:24:42.170814+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-01-27": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:24:48.417351+00:00",
+   "saida": "1:50 AM on Wed, Jan 27"
+  },
+  "CGB-CNF-2027-01-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:25:32.332122+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-01-29": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:26:15.550850+00:00",
+   "saida": "4:45 AM on Fri, Jan 29"
+  },
+  "CGB-CNF-2027-01-30": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 688.0,
+   "quando": "2026-10-27T10:26:20.483529+00:00",
+   "saida": "11:00 AM on Sat, Jan 30"
+  },
+  "CGB-CNF-2027-01-31": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:27:05.324371+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-01": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:27:44.015917+00:00",
+   "saida": "2:50 AM on Mon, Feb 1"
+  },
+  "CGB-CNF-2027-02-02": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:27:50.603580+00:00",
+   "saida": "1:50 AM on Tue, Feb 2"
+  },
+  "CGB-CNF-2027-02-03": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:27:54.852996+00:00",
+   "saida": "4:45 AM on Wed, Feb 3"
+  },
+  "CGB-CNF-2027-02-04": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:28:37.427436+00:00",
+   "saida": "2:50 AM on Thu, Feb 4"
+  },
+  "CGB-CNF-2027-02-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:29:14.980451+00:00",
+   "saida": "2:50 AM on Fri, Feb 5"
+  },
+  "CGB-CNF-2027-02-06": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:29:20.919228+00:00",
+   "saida": "5:10 AM on Sat, Feb 6"
+  },
+  "CGB-CNF-2027-02-07": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:29:25.798319+00:00",
+   "saida": "4:45 AM on Sun, Feb 7"
+  },
+  "CGB-CNF-2027-02-08": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:29:30.168196+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-09": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:30:12.520958+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:30:54.490378+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:31:35.006771+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:32:15.434429+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-13": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:32:21.402957+00:00",
+   "saida": "2:25 AM on Sat, Feb 13"
+  },
+  "CGB-CNF-2027-02-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:33:07.675675+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:33:46.940577+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-16": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:33:51.668100+00:00",
+   "saida": "1:50 AM on Tue, Feb 16"
+  },
+  "CGB-CNF-2027-02-17": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:33:56.865021+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:34:38.098824+00:00",
+   "saida": "1:50 AM on Thu, Feb 18"
+  },
+  "CGB-CNF-2027-02-19": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:35:20.818692+00:00",
+   "saida": "4:30 PM on Fri, Feb 19"
+  },
+  "CGB-CNF-2027-02-20": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:35:26.684723+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:36:07.807544+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-22": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:36:52.788456+00:00",
+   "saida": "11:10 AM on Mon, Feb 22"
+  },
+  "CGB-CNF-2027-02-23": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:36:58.429500+00:00",
+   "saida": "1:50 AM on Tue, Feb 23"
+  },
+  "CGB-CNF-2027-02-24": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:37:03.775045+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-02-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:37:48.290553+00:00",
+   "saida": "1:50 AM on Thu, Feb 25"
+  },
+  "CGB-CNF-2027-02-26": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:38:29.082125+00:00",
+   "saida": "1:50 AM on Fri, Feb 26"
+  },
+  "CGB-CNF-2027-02-27": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:38:34.207924+00:00",
+   "saida": "1:50 AM on Sat, Feb 27"
+  },
+  "CGB-CNF-2027-02-28": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:39:16.612020+00:00",
+   "saida": "4:45 AM on Sun, Feb 28"
+  },
+  "CGB-CNF-2027-03-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:39:54.818443+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-03-02": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:40:01.513095+00:00",
+   "saida": "10:40 AM on Tue, Mar 2"
+  },
+  "CGB-CNF-2027-03-03": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:40:07.005196+00:00",
+   "saida": "2:00 AM on Wed, Mar 3"
+  },
+  "CGB-CNF-2027-03-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:40:50.386860+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-03-05": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:41:30.771119+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-03-06": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:41:36.164908+00:00",
+   "saida": "5:20 PM on Sat, Mar 6"
+  },
+  "CGB-CNF-2027-03-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:42:17.587748+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-03-08": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:43:01.588088+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-03-09": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:43:05.359258+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-03-10": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:43:11.527385+00:00",
+   "saida": "2:00 AM on Wed, Mar 10"
+  },
+  "CGB-CNF-2027-03-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 590.0,
+   "quando": "2026-10-27T10:43:56.368743+00:00",
+   "saida": "12:30 PM on Thu, Mar 11"
+  },
+  "CGB-CNF-2027-03-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:44:36.540916+00:00",
+   "saida": "2:00 AM on Fri, Mar 12"
+  },
+  "CGB-CNF-2027-03-13": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:44:42.541792+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-03-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:45:23.760922+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-03-15": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:46:10.705223+00:00",
+   "saida": "5:20 PM on Mon, Mar 15"
+  },
+  "CGB-CNF-2027-03-16": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:46:14.769421+00:00",
+   "saida": "10:40 AM on Tue, Mar 16"
+  },
+  "CGB-CNF-2027-03-17": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:46:20.469374+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-03-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:46:58.884749+00:00",
+   "saida": ""
+  },
+  "CGB-CNF-2027-03-19": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:47:39.536170+00:00",
+   "saida": "4:50 AM on Fri, Mar 19"
+  },
+  "CGB-CNF-2027-03-20": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 516.0,
+   "quando": "2026-10-27T10:47:44.347984+00:00",
+   "saida": ""
+  },
+  "CGH-CNF-2027-01-10": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 252.0,
+   "quando": "2026-10-27T10:17:05.780372+00:00",
+   "saida": "6:05 AM on Sun, Jan 10"
+  },
+  "CGH-CNF-2027-01-11": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 252.0,
+   "quando": "2026-10-27T10:17:44.435997+00:00",
+   "saida": "12:25 PM on Mon, Jan 11"
+  },
+  "CGH-CNF-2027-01-17": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 252.0,
+   "quando": "2026-10-27T10:20:01.712405+00:00",
+   "saida": "6:05 AM on Sun, Jan 17"
+  },
+  "CGH-CNF-2027-01-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 252.0,
+   "quando": "2026-10-27T10:20:46.841364+00:00",
+   "saida": ""
+  },
+  "CGH-CNF-2027-01-24": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 252.0,
+   "quando": "2026-10-27T10:23:12.500222+00:00",
+   "saida": ""
+  },
+  "CGH-CNF-2027-01-25": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:23:55.644384+00:00",
+   "saida": ""
+  },
+  "CGH-CNF-2027-01-31": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:26:27.997881+00:00",
+   "saida": "8:00 AM on Sun, Jan 31"
+  },
+  "CGH-CNF-2027-02-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:27:12.802273+00:00",
+   "saida": ""
+  },
+  "CGH-CNF-2027-02-09": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:29:37.916329+00:00",
+   "saida": "11:05 AM on Tue, Feb 9"
+  },
+  "CGH-CNF-2027-02-10": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:30:19.895695+00:00",
+   "saida": "11:05 AM on Wed, Feb 10"
+  },
+  "CGH-CNF-2027-02-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:32:28.460847+00:00",
+   "saida": "11:05 AM on Sun, Feb 14"
+  },
+  "CGH-CNF-2027-02-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:33:16.078374+00:00",
+   "saida": ""
+  },
+  "CGH-CNF-2027-02-21": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:35:34.076364+00:00",
+   "saida": "11:05 AM on Sun, Feb 21"
+  },
+  "CGH-CNF-2027-02-22": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:36:16.732897+00:00",
+   "saida": "2:00 PM on Mon, Feb 22"
+  },
+  "CGH-CNF-2027-02-28": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:38:42.032269+00:00",
+   "saida": "11:05 AM on Sun, Feb 28"
+  },
+  "CGH-CNF-2027-03-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:41:44.056185+00:00",
+   "saida": ""
+  },
+  "CGH-CNF-2027-03-08": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:42:25.200853+00:00",
+   "saida": "2:00 PM on Mon, Mar 8"
+  },
+  "CGH-CNF-2027-03-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:44:50.476698+00:00",
+   "saida": "6:20 AM on Sun, Mar 14"
+  },
+  "CGH-CNF-2027-03-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 250.0,
+   "quando": "2026-10-27T10:45:31.639080+00:00",
+   "saida": ""
+  },
+  "CGR-CNF-2027-01-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 707.0,
+   "quando": "2026-10-27T10:18:12.040013+00:00",
+   "saida": "3:10 AM on Mon, Jan 11"
+  },
+  "CGR-CNF-2027-01-17": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 621.0,
+   "quando": "2026-10-27T10:20:31.839815+00:00",
+   "saida": ""
+  },
+  "CGR-CNF-2027-01-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 621.0,
+   "quando": "2026-10-27T10:21:15.195061+00:00",
+   "saida": "11:20 AM on Mon, Jan 18"
+  },
+  "CGR-CNF-2027-01-24": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 621.0,
+   "quando": "2026-10-27T10:23:42.417980+00:00",
+   "saida": ""
+  },
+  "CGR-CNF-2027-01-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:24:29.264237+00:00",
+   "saida": "6:40 PM on Mon, Jan 25"
+  },
+  "CGR-CNF-2027-01-31": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 625.0,
+   "quando": "2026-10-27T10:27:00.053325+00:00",
+   "saida": "8:50 AM on Sun, Jan 31"
+  },
+  "CGR-CNF-2027-02-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:27:39.242403+00:00",
+   "saida": ""
+  },
+  "CGR-CNF-2027-02-09": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:30:06.437400+00:00",
+   "saida": ""
+  },
+  "CGR-CNF-2027-02-10": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 617.0,
+   "quando": "2026-10-27T10:30:49.735358+00:00",
+   "saida": "8:00 AM on Wed, Feb 10"
+  },
+  "CGR-CNF-2027-02-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:33:01.026994+00:00",
+   "saida": "8:50 AM on Sun, Feb 14"
+  },
+  "CGR-CNF-2027-02-15": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:33:43.455814+00:00",
+   "saida": "3:10 AM on Mon, Feb 15"
+  },
+  "CGR-CNF-2027-02-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:36:02.210344+00:00",
+   "saida": ""
+  },
+  "CGR-CNF-2027-02-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:36:47.035061+00:00",
+   "saida": ""
+  },
+  "CGR-CNF-2027-02-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:39:10.181534+00:00",
+   "saida": ""
+  },
+  "CGR-CNF-2027-03-01": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:39:49.791283+00:00",
+   "saida": "4:20 PM on Mon, Mar 1"
+  },
+  "CGR-CNF-2027-03-07": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:42:13.125561+00:00",
+   "saida": "8:50 AM on Sun, Mar 7"
+  },
+  "CGR-CNF-2027-03-08": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:42:55.492122+00:00",
+   "saida": "6:40 PM on Mon, Mar 8"
+  },
+  "CGR-CNF-2027-03-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 572.0,
+   "quando": "2026-10-27T10:45:19.830335+00:00",
+   "saida": "2:40 PM on Sun, Mar 14"
+  },
+  "CGR-CNF-2027-03-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 566.0,
+   "quando": "2026-10-27T10:46:03.352265+00:00",
+   "saida": ""
+  },
+  "CNF-BPS-2027-01-07": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:16:02.753456+00:00",
+   "saida": "1:00 PM on Thu, Jan 7"
+  },
+  "CNF-BPS-2027-01-08": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:16:44.949339+00:00",
+   "saida": "1:00 PM on Fri, Jan 8"
+  },
+  "CNF-BPS-2027-01-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:18:59.377888+00:00",
+   "saida": ""
+  },
+  "CNF-BPS-2027-01-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 652.0,
+   "quando": "2026-10-27T10:19:40.340368+00:00",
+   "saida": ""
+  },
+  "CNF-BPS-2027-01-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 572.0,
+   "quando": "2026-10-27T10:22:04.968389+00:00",
+   "saida": ""
+  },
+  "CNF-BPS-2027-01-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 572.0,
+   "quando": "2026-10-27T10:22:49.023040+00:00",
+   "saida": ""
+  },
+  "CNF-BPS-2027-01-28": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 484.0,
+   "quando": "2026-10-27T10:25:23.777833+00:00",
+   "saida": "1:00 PM on Thu, Jan 28"
+  },
+  "CNF-BPS-2027-01-29": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 484.0,
+   "quando": "2026-10-27T10:26:07.229965+00:00",
+   "saida": ""
+  },
+  "CNF-BPS-2027-02-04": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 975.0,
+   "quando": "2026-10-27T10:28:29.908091+00:00",
+   "saida": "10:15 AM on Thu, Feb 4"
+  },
+  "CNF-BPS-2027-02-05": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 1343.0,
+   "quando": "2026-10-27T10:29:07.287067+00:00",
+   "saida": "2:35 PM on Fri, Feb 5"
+  },
+  "CNF-BPS-2027-02-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 690.0,
+   "quando": "2026-10-27T10:31:26.955288+00:00",
+   "saida": "6:20 AM on Thu, Feb 11"
+  },
+  "CNF-BPS-2027-02-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 559.0,
+   "quando": "2026-10-27T10:32:08.276706+00:00",
+   "saida": "7:40 AM on Fri, Feb 12"
+  },
+  "CNF-BPS-2027-02-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 787.0,
+   "quando": "2026-10-27T10:34:30.035793+00:00",
+   "saida": "1:10 PM on Thu, Feb 18"
+  },
+  "CNF-BPS-2027-02-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 559.0,
+   "quando": "2026-10-27T10:35:11.622872+00:00",
+   "saida": ""
+  },
+  "CNF-BPS-2027-02-25": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 534.0,
+   "quando": "2026-10-27T10:37:38.421503+00:00",
+   "saida": ""
+  },
+  "CNF-BPS-2027-02-26": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 569.0,
+   "quando": "2026-10-27T10:38:19.659053+00:00",
+   "saida": "8:25 PM on Fri, Feb 26"
+  },
+  "CNF-BPS-2027-03-04": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 720.0,
+   "quando": "2026-10-27T10:40:41.081644+00:00",
+   "saida": "8:15 AM on Thu, Mar 4"
+  },
+  "CNF-BPS-2027-03-05": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 569.0,
+   "quando": "2026-10-27T10:41:24.066200+00:00",
+   "saida": ""
+  },
+  "CNF-BPS-2027-03-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 720.0,
+   "quando": "2026-10-27T10:43:47.290914+00:00",
+   "saida": "8:15 AM on Thu, Mar 11"
+  },
+  "CNF-BPS-2027-03-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 569.0,
+   "quando": "2026-10-27T10:44:29.103476+00:00",
+   "saida": ""
+  },
+  "CNF-BPS-2027-03-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 569.0,
+   "quando": "2026-10-27T10:46:51.321701+00:00",
+   "saida": "1:00 PM on Thu, Mar 18"
+  },
+  "CNF-BPS-2027-03-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 534.0,
+   "quando": "2026-10-27T10:47:32.220397+00:00",
+   "saida": ""
+  },
   "CNF-CGB-2026-12-18": {
    "cia": "LATAM",
    "moeda_original": "BRL",
@@ -50,6 +1411,1318 @@
    "preco": 876.0,
    "quando": "2026-10-27T04:13:03.393111+00:00",
    "saida": "6:20 AM on Fri, Dec 18"
+  },
+  "CNF-CGB-2026-12-19": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 876.0,
+   "quando": "2026-10-27T10:14:52.918713+00:00",
+   "saida": "5:55 PM on Sat, Dec 19"
+  },
+  "CNF-CGB-2026-12-20": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 893.0,
+   "quando": "2026-10-27T10:14:57.827508+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-01-06": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 874.0,
+   "quando": "2026-10-27T10:15:30.375193+00:00",
+   "saida": "4:55 AM on Wed, Jan 6"
+  },
+  "CNF-CGB-2027-01-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 754.0,
+   "quando": "2026-10-27T10:16:56.463771+00:00",
+   "saida": "12:10 PM on Fri, Jan 8"
+  },
+  "CNF-CGB-2027-01-09": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 936.0,
+   "quando": "2026-10-27T10:17:01.118323+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-01-10": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:17:38.939538+00:00",
+   "saida": "7:05 AM on Sun, Jan 10"
+  },
+  "CNF-CGB-2027-01-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 790.0,
+   "quando": "2026-10-27T10:18:20.261340+00:00",
+   "saida": "6:00 AM on Mon, Jan 11"
+  },
+  "CNF-CGB-2027-01-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 754.0,
+   "quando": "2026-10-27T10:18:25.235098+00:00",
+   "saida": "6:20 AM on Tue, Jan 12"
+  },
+  "CNF-CGB-2027-01-13": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 790.0,
+   "quando": "2026-10-27T10:18:29.483214+00:00",
+   "saida": "7:00 PM on Wed, Jan 13"
+  },
+  "CNF-CGB-2027-01-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 790.0,
+   "quando": "2026-10-27T10:19:09.494975+00:00",
+   "saida": "6:20 AM on Thu, Jan 14"
+  },
+  "CNF-CGB-2027-01-15": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 790.0,
+   "quando": "2026-10-27T10:19:51.321198+00:00",
+   "saida": "6:20 AM on Fri, Jan 15"
+  },
+  "CNF-CGB-2027-01-16": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 766.0,
+   "quando": "2026-10-27T10:19:56.305178+00:00",
+   "saida": "4:55 AM on Sat, Jan 16"
+  },
+  "CNF-CGB-2027-01-17": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 766.0,
+   "quando": "2026-10-27T10:20:42.172131+00:00",
+   "saida": "11:10 AM on Sun, Jan 17"
+  },
+  "CNF-CGB-2027-01-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 801.0,
+   "quando": "2026-10-27T10:21:23.084085+00:00",
+   "saida": "4:00 PM on Mon, Jan 18"
+  },
+  "CNF-CGB-2027-01-19": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 766.0,
+   "quando": "2026-10-27T10:21:29.615461+00:00",
+   "saida": "4:55 AM on Tue, Jan 19"
+  },
+  "CNF-CGB-2027-01-20": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:21:34.495547+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-01-21": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:22:16.263494+00:00",
+   "saida": "6:20 AM on Thu, Jan 21"
+  },
+  "CNF-CGB-2027-01-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:22:59.593420+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-01-23": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:23:05.813521+00:00",
+   "saida": "6:05 AM on Sat, Jan 23"
+  },
+  "CNF-CGB-2027-01-24": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 754.0,
+   "quando": "2026-10-27T10:23:50.547345+00:00",
+   "saida": "6:05 AM on Sun, Jan 24"
+  },
+  "CNF-CGB-2027-01-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:24:39.074278+00:00",
+   "saida": "6:55 PM on Mon, Jan 25"
+  },
+  "CNF-CGB-2027-01-26": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:24:45.292875+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-01-27": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 674.0,
+   "quando": "2026-10-27T10:24:50.802081+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-01-28": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:25:35.114554+00:00",
+   "saida": "6:20 AM on Thu, Jan 28"
+  },
+  "CNF-CGB-2027-01-29": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:26:17.670042+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-01-30": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:26:23.182442+00:00",
+   "saida": "6:05 AM on Sat, Jan 30"
+  },
+  "CNF-CGB-2027-01-31": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 639.0,
+   "quando": "2026-10-27T10:27:07.478245+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-02-01": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:27:47.066913+00:00",
+   "saida": "6:05 AM on Mon, Feb 1"
+  },
+  "CNF-CGB-2027-02-02": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:27:52.457470+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-02-03": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 674.0,
+   "quando": "2026-10-27T10:27:57.347772+00:00",
+   "saida": "5:05 PM on Wed, Feb 3"
+  },
+  "CNF-CGB-2027-02-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:28:39.534420+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-02-05": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:29:17.653296+00:00",
+   "saida": "12:10 PM on Fri, Feb 5"
+  },
+  "CNF-CGB-2027-02-06": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 674.0,
+   "quando": "2026-10-27T10:29:23.052463+00:00",
+   "saida": "6:50 AM on Sat, Feb 6"
+  },
+  "CNF-CGB-2027-02-07": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:29:28.103041+00:00",
+   "saida": "6:25 AM on Sun, Feb 7"
+  },
+  "CNF-CGB-2027-02-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:29:33.037419+00:00",
+   "saida": "3:05 PM on Mon, Feb 8"
+  },
+  "CNF-CGB-2027-02-09": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 674.0,
+   "quando": "2026-10-27T10:30:15.480074+00:00",
+   "saida": "11:05 AM on Tue, Feb 9"
+  },
+  "CNF-CGB-2027-02-10": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 801.0,
+   "quando": "2026-10-27T10:30:56.977236+00:00",
+   "saida": "7:25 AM on Wed, Feb 10"
+  },
+  "CNF-CGB-2027-02-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:31:36.893797+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-02-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:32:18.284637+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-02-13": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:32:23.558442+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-02-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:33:10.712153+00:00",
+   "saida": "6:05 AM on Sun, Feb 14"
+  },
+  "CNF-CGB-2027-02-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:33:48.648529+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-02-16": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:33:54.478661+00:00",
+   "saida": "11:20 AM on Tue, Feb 16"
+  },
+  "CNF-CGB-2027-02-17": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:34:00.228618+00:00",
+   "saida": "6:35 AM on Wed, Feb 17"
+  },
+  "CNF-CGB-2027-02-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:34:42.278092+00:00",
+   "saida": "6:20 AM on Thu, Feb 18"
+  },
+  "CNF-CGB-2027-02-19": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:35:23.734396+00:00",
+   "saida": "6:25 PM on Fri, Feb 19"
+  },
+  "CNF-CGB-2027-02-20": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:35:28.634283+00:00",
+   "saida": "6:35 PM on Sat, Feb 20"
+  },
+  "CNF-CGB-2027-02-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:36:10.917172+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-02-22": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:36:56.278807+00:00",
+   "saida": "11:20 AM on Mon, Feb 22"
+  },
+  "CNF-CGB-2027-02-23": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:37:01.304652+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-02-24": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:37:06.424516+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-02-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:37:51.575273+00:00",
+   "saida": "11:20 AM on Thu, Feb 25"
+  },
+  "CNF-CGB-2027-02-26": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:38:31.759540+00:00",
+   "saida": "11:20 AM on Fri, Feb 26"
+  },
+  "CNF-CGB-2027-02-27": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:38:36.896525+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-02-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 577.0,
+   "quando": "2026-10-27T10:39:18.255004+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-03-01": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:39:57.821847+00:00",
+   "saida": "11:00 PM on Mon, Mar 1"
+  },
+  "CNF-CGB-2027-03-02": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:40:03.677150+00:00",
+   "saida": "10:55 AM on Tue, Mar 2"
+  },
+  "CNF-CGB-2027-03-03": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:40:09.948905+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-03-04": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:40:52.877020+00:00",
+   "saida": "10:55 AM on Thu, Mar 4"
+  },
+  "CNF-CGB-2027-03-05": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:41:33.799647+00:00",
+   "saida": "5:30 AM on Fri, Mar 5"
+  },
+  "CNF-CGB-2027-03-06": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:41:38.767082+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-03-07": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:42:20.422537+00:00",
+   "saida": "5:30 AM on Sun, Mar 7"
+  },
+  "CNF-CGB-2027-03-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:43:03.867270+00:00",
+   "saida": "10:55 AM on Mon, Mar 8"
+  },
+  "CNF-CGB-2027-03-09": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:43:08.198351+00:00",
+   "saida": "5:30 AM on Tue, Mar 9"
+  },
+  "CNF-CGB-2027-03-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:43:13.772255+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-03-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:43:59.386197+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-03-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:44:39.778132+00:00",
+   "saida": "11:45 AM on Fri, Mar 12"
+  },
+  "CNF-CGB-2027-03-13": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:44:45.641903+00:00",
+   "saida": "10:55 AM on Sat, Mar 13"
+  },
+  "CNF-CGB-2027-03-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:45:26.521015+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-03-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:46:12.611072+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-03-16": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:46:17.740191+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-03-17": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:46:22.810090+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-03-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:47:01.752489+00:00",
+   "saida": "10:55 AM on Thu, Mar 18"
+  },
+  "CNF-CGB-2027-03-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:47:42.295614+00:00",
+   "saida": ""
+  },
+  "CNF-CGB-2027-03-20": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 503.0,
+   "quando": "2026-10-27T10:47:47.133889+00:00",
+   "saida": "5:30 AM on Sat, Mar 20"
+  },
+  "CNF-CGH-2027-01-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:15:34.872953+00:00",
+   "saida": ""
+  },
+  "CNF-CGH-2027-01-08": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:16:19.100003+00:00",
+   "saida": "11:20 AM on Fri, Jan 8"
+  },
+  "CNF-CGH-2027-01-14": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:18:34.240348+00:00",
+   "saida": "10:35 AM on Thu, Jan 14"
+  },
+  "CNF-CGH-2027-01-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:19:14.898588+00:00",
+   "saida": ""
+  },
+  "CNF-CGH-2027-01-21": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:21:38.891988+00:00",
+   "saida": "10:35 AM on Thu, Jan 21"
+  },
+  "CNF-CGH-2027-01-22": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:22:21.537164+00:00",
+   "saida": "11:20 AM on Fri, Jan 22"
+  },
+  "CNF-CGH-2027-01-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:24:56.174149+00:00",
+   "saida": ""
+  },
+  "CNF-CGH-2027-01-29": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:25:39.032455+00:00",
+   "saida": ""
+  },
+  "CNF-CGH-2027-02-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:28:01.967580+00:00",
+   "saida": ""
+  },
+  "CNF-CGH-2027-02-05": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:28:43.166909+00:00",
+   "saida": ""
+  },
+  "CNF-CGH-2027-02-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:31:02.934750+00:00",
+   "saida": "1:00 PM on Thu, Feb 11"
+  },
+  "CNF-CGH-2027-02-12": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:31:41.545285+00:00",
+   "saida": "4:00 PM on Fri, Feb 12"
+  },
+  "CNF-CGH-2027-02-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:34:04.698327+00:00",
+   "saida": "4:00 PM on Thu, Feb 18"
+  },
+  "CNF-CGH-2027-02-19": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:34:47.131211+00:00",
+   "saida": "4:00 PM on Fri, Feb 19"
+  },
+  "CNF-CGH-2027-02-25": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:37:11.679581+00:00",
+   "saida": ""
+  },
+  "CNF-CGH-2027-02-26": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:37:56.707519+00:00",
+   "saida": "4:00 PM on Fri, Feb 26"
+  },
+  "CNF-CGH-2027-03-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:40:14.315737+00:00",
+   "saida": ""
+  },
+  "CNF-CGH-2027-03-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:40:57.494544+00:00",
+   "saida": "4:00 PM on Fri, Mar 5"
+  },
+  "CNF-CGH-2027-03-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:43:18.534120+00:00",
+   "saida": ""
+  },
+  "CNF-CGH-2027-03-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:44:05.281605+00:00",
+   "saida": ""
+  },
+  "CNF-CGH-2027-03-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:46:27.744292+00:00",
+   "saida": "1:00 PM on Thu, Mar 18"
+  },
+  "CNF-CGH-2027-03-19": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 374.0,
+   "quando": "2026-10-27T10:47:06.930664+00:00",
+   "saida": "4:55 PM on Fri, Mar 19"
+  },
+  "CNF-CGR-2027-01-07": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 673.0,
+   "quando": "2026-10-27T10:16:06.652991+00:00",
+   "saida": "6:55 AM on Thu, Jan 7"
+  },
+  "CNF-CGR-2027-01-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 673.0,
+   "quando": "2026-10-27T10:16:47.771061+00:00",
+   "saida": "6:20 AM on Fri, Jan 8"
+  },
+  "CNF-CGR-2027-01-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 704.0,
+   "quando": "2026-10-27T10:19:01.262997+00:00",
+   "saida": ""
+  },
+  "CNF-CGR-2027-01-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 704.0,
+   "quando": "2026-10-27T10:19:42.491690+00:00",
+   "saida": ""
+  },
+  "CNF-CGR-2027-01-21": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 618.0,
+   "quando": "2026-10-27T10:22:08.025142+00:00",
+   "saida": "1:10 PM on Thu, Jan 21"
+  },
+  "CNF-CGR-2027-01-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 673.0,
+   "quando": "2026-10-27T10:22:51.899636+00:00",
+   "saida": ""
+  },
+  "CNF-CGR-2027-01-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 563.0,
+   "quando": "2026-10-27T10:25:26.907756+00:00",
+   "saida": ""
+  },
+  "CNF-CGR-2027-01-29": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 563.0,
+   "quando": "2026-10-27T10:26:09.678195+00:00",
+   "saida": "6:00 AM on Fri, Jan 29"
+  },
+  "CNF-CGR-2027-02-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 622.0,
+   "quando": "2026-10-27T10:28:31.605031+00:00",
+   "saida": ""
+  },
+  "CNF-CGR-2027-02-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 563.0,
+   "quando": "2026-10-27T10:29:09.789299+00:00",
+   "saida": "6:20 AM on Fri, Feb 5"
+  },
+  "CNF-CGR-2027-02-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 563.0,
+   "quando": "2026-10-27T10:31:29.649590+00:00",
+   "saida": "6:00 AM on Thu, Feb 11"
+  },
+  "CNF-CGR-2027-02-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 563.0,
+   "quando": "2026-10-27T10:32:10.514843+00:00",
+   "saida": ""
+  },
+  "CNF-CGR-2027-02-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 569.0,
+   "quando": "2026-10-27T10:34:32.341092+00:00",
+   "saida": "6:35 AM on Thu, Feb 18"
+  },
+  "CNF-CGR-2027-02-19": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 563.0,
+   "quando": "2026-10-27T10:35:14.981940+00:00",
+   "saida": "6:00 AM on Fri, Feb 19"
+  },
+  "CNF-CGR-2027-02-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 563.0,
+   "quando": "2026-10-27T10:37:42.091802+00:00",
+   "saida": "4:45 PM on Thu, Feb 25"
+  },
+  "CNF-CGR-2027-02-26": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 563.0,
+   "quando": "2026-10-27T10:38:22.109687+00:00",
+   "saida": ""
+  },
+  "CNF-CGR-2027-03-04": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 569.0,
+   "quando": "2026-10-27T10:40:44.815843+00:00",
+   "saida": "9:45 AM on Thu, Mar 4"
+  },
+  "CNF-CGR-2027-03-05": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 563.0,
+   "quando": "2026-10-27T10:41:26.473107+00:00",
+   "saida": ""
+  },
+  "CNF-CGR-2027-03-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 569.0,
+   "quando": "2026-10-27T10:43:50.840213+00:00",
+   "saida": "9:45 AM on Thu, Mar 11"
+  },
+  "CNF-CGR-2027-03-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 569.0,
+   "quando": "2026-10-27T10:44:30.965534+00:00",
+   "saida": "5:25 AM on Fri, Mar 12"
+  },
+  "CNF-CGR-2027-03-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 563.0,
+   "quando": "2026-10-27T10:46:53.859931+00:00",
+   "saida": "4:45 PM on Thu, Mar 18"
+  },
+  "CNF-CGR-2027-03-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 569.0,
+   "quando": "2026-10-27T10:47:35.012375+00:00",
+   "saida": ""
+  },
+  "CNF-CWB-2027-01-07": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:15:49.459423+00:00",
+   "saida": "6:25 AM on Thu, Jan 7"
+  },
+  "CNF-CWB-2027-01-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:16:30.543221+00:00",
+   "saida": "9:40 AM on Fri, Jan 8"
+  },
+  "CNF-CWB-2027-01-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:18:46.741113+00:00",
+   "saida": "12:10 PM on Thu, Jan 14"
+  },
+  "CNF-CWB-2027-01-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:19:28.991897+00:00",
+   "saida": ""
+  },
+  "CNF-CWB-2027-01-21": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:21:52.434612+00:00",
+   "saida": "4:00 AM on Thu, Jan 21"
+  },
+  "CNF-CWB-2027-01-22": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:22:34.456768+00:00",
+   "saida": "9:40 AM on Fri, Jan 22"
+  },
+  "CNF-CWB-2027-01-28": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:25:10.778212+00:00",
+   "saida": "11:20 AM on Thu, Jan 28"
+  },
+  "CNF-CWB-2027-01-29": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:25:53.553219+00:00",
+   "saida": ""
+  },
+  "CNF-CWB-2027-02-04": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:28:15.829425+00:00",
+   "saida": "12:10 PM on Thu, Feb 4"
+  },
+  "CNF-CWB-2027-02-05": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:28:55.146891+00:00",
+   "saida": "12:10 PM on Fri, Feb 5"
+  },
+  "CNF-CWB-2027-02-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:31:16.314209+00:00",
+   "saida": ""
+  },
+  "CNF-CWB-2027-02-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:31:54.072369+00:00",
+   "saida": "11:20 AM on Fri, Feb 12"
+  },
+  "CNF-CWB-2027-02-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:34:18.578884+00:00",
+   "saida": "8:15 AM on Thu, Feb 18"
+  },
+  "CNF-CWB-2027-02-19": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:34:59.702301+00:00",
+   "saida": "8:15 AM on Fri, Feb 19"
+  },
+  "CNF-CWB-2027-02-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:37:26.202337+00:00",
+   "saida": "8:15 AM on Thu, Feb 25"
+  },
+  "CNF-CWB-2027-02-26": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:38:07.615549+00:00",
+   "saida": ""
+  },
+  "CNF-CWB-2027-03-04": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:40:27.983163+00:00",
+   "saida": "8:15 AM on Thu, Mar 4"
+  },
+  "CNF-CWB-2027-03-05": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:41:10.016555+00:00",
+   "saida": ""
+  },
+  "CNF-CWB-2027-03-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:43:33.967266+00:00",
+   "saida": "6:15 AM on Thu, Mar 11"
+  },
+  "CNF-CWB-2027-03-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:44:15.731715+00:00",
+   "saida": ""
+  },
+  "CNF-CWB-2027-03-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:46:38.435763+00:00",
+   "saida": ""
+  },
+  "CNF-CWB-2027-03-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:47:19.405419+00:00",
+   "saida": ""
+  },
+  "CNF-FLN-2027-01-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:15:54.149972+00:00",
+   "saida": ""
+  },
+  "CNF-FLN-2027-01-08": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:16:35.943343+00:00",
+   "saida": ""
+  },
+  "CNF-FLN-2027-01-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:18:51.729605+00:00",
+   "saida": "2:05 PM on Thu, Jan 14"
+  },
+  "CNF-FLN-2027-01-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 551.0,
+   "quando": "2026-10-27T10:19:34.408942+00:00",
+   "saida": ""
+  },
+  "CNF-FLN-2027-01-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:21:56.884824+00:00",
+   "saida": ""
+  },
+  "CNF-FLN-2027-01-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:22:39.694504+00:00",
+   "saida": ""
+  },
+  "CNF-FLN-2027-01-28": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:25:17.129536+00:00",
+   "saida": "6:55 AM on Thu, Jan 28"
+  },
+  "CNF-FLN-2027-01-29": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:25:59.869188+00:00",
+   "saida": "6:20 AM on Fri, Jan 29"
+  },
+  "CNF-FLN-2027-02-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 655.0,
+   "quando": "2026-10-27T10:28:19.791759+00:00",
+   "saida": ""
+  },
+  "CNF-FLN-2027-02-05": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 655.0,
+   "quando": "2026-10-27T10:28:59.812395+00:00",
+   "saida": ""
+  },
+  "CNF-FLN-2027-02-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:31:20.746151+00:00",
+   "saida": "6:05 AM on Thu, Feb 11"
+  },
+  "CNF-FLN-2027-02-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:32:00.170510+00:00",
+   "saida": "6:05 AM on Fri, Feb 12"
+  },
+  "CNF-FLN-2027-02-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:34:23.116109+00:00",
+   "saida": ""
+  },
+  "CNF-FLN-2027-02-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:35:04.374813+00:00",
+   "saida": ""
+  },
+  "CNF-FLN-2027-02-25": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:37:30.671853+00:00",
+   "saida": ""
+  },
+  "CNF-FLN-2027-02-26": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:38:12.152584+00:00",
+   "saida": "6:35 AM on Fri, Feb 26"
+  },
+  "CNF-FLN-2027-03-04": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:40:33.083046+00:00",
+   "saida": "12:10 PM on Thu, Mar 4"
+  },
+  "CNF-FLN-2027-03-05": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:41:17.366063+00:00",
+   "saida": "7:10 AM on Fri, Mar 5"
+  },
+  "CNF-FLN-2027-03-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:43:38.292982+00:00",
+   "saida": "7:10 AM on Thu, Mar 11"
+  },
+  "CNF-FLN-2027-03-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:44:20.478668+00:00",
+   "saida": "3:05 PM on Fri, Mar 12"
+  },
+  "CNF-FLN-2027-03-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:46:43.501754+00:00",
+   "saida": "7:10 AM on Thu, Mar 18"
+  },
+  "CNF-FLN-2027-03-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:47:24.443721+00:00",
+   "saida": ""
+  },
+  "CNF-GIG-2027-01-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:15:40.003740+00:00",
+   "saida": ""
   },
   "CNF-GIG-2027-01-08": {
    "cia": "Gol",
@@ -59,6 +2732,686 @@
    "quando": "2026-10-27T04:12:54.558842+00:00",
    "saida": "3:05 PM on Fri, Jan 8"
   },
+  "CNF-GIG-2027-01-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 448.0,
+   "quando": "2026-10-27T10:18:40.005171+00:00",
+   "saida": ""
+  },
+  "CNF-GIG-2027-01-15": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:19:19.776022+00:00",
+   "saida": "3:05 PM on Fri, Jan 15"
+  },
+  "CNF-GIG-2027-01-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 410.0,
+   "quando": "2026-10-27T10:21:43.399585+00:00",
+   "saida": ""
+  },
+  "CNF-GIG-2027-01-22": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 445.0,
+   "quando": "2026-10-27T10:22:27.214575+00:00",
+   "saida": "8:25 PM on Fri, Jan 22"
+  },
+  "CNF-GIG-2027-01-28": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:25:01.530019+00:00",
+   "saida": "6:55 AM on Thu, Jan 28"
+  },
+  "CNF-GIG-2027-01-29": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:25:45.092018+00:00",
+   "saida": "6:05 AM on Fri, Jan 29"
+  },
+  "CNF-GIG-2027-02-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 524.0,
+   "quando": "2026-10-27T10:28:06.880284+00:00",
+   "saida": ""
+  },
+  "CNF-GIG-2027-02-05": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 692.0,
+   "quando": "2026-10-27T10:28:46.867496+00:00",
+   "saida": "6:05 AM on Fri, Feb 5"
+  },
+  "CNF-GIG-2027-02-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:31:07.554378+00:00",
+   "saida": ""
+  },
+  "CNF-GIG-2027-02-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:31:46.166551+00:00",
+   "saida": "6:05 AM on Fri, Feb 12"
+  },
+  "CNF-GIG-2027-02-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:34:10.707644+00:00",
+   "saida": "10:25 AM on Thu, Feb 18"
+  },
+  "CNF-GIG-2027-02-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:37:16.616700+00:00",
+   "saida": "6:05 AM on Thu, Feb 25"
+  },
+  "CNF-GIG-2027-02-26": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:38:01.405543+00:00",
+   "saida": ""
+  },
+  "CNF-GIG-2027-03-04": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:40:19.436986+00:00",
+   "saida": "2:40 PM on Thu, Mar 4"
+  },
+  "CNF-GIG-2027-03-05": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:41:02.490447+00:00",
+   "saida": ""
+  },
+  "CNF-GIG-2027-03-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:43:24.180456+00:00",
+   "saida": "2:40 PM on Thu, Mar 11"
+  },
+  "CNF-GIG-2027-03-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:44:08.430840+00:00",
+   "saida": ""
+  },
+  "CNF-GIG-2027-03-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:46:31.474500+00:00",
+   "saida": "10:55 AM on Thu, Mar 18"
+  },
+  "CNF-GIG-2027-03-19": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:47:12.283232+00:00",
+   "saida": "5:30 AM on Fri, Mar 19"
+  },
+  "CNF-GRU-2027-01-07": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:15:33.103438+00:00",
+   "saida": "6:10 AM on Thu, Jan 7"
+  },
+  "CNF-GRU-2027-01-08": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:16:15.978017+00:00",
+   "saida": "7:50 AM on Fri, Jan 8"
+  },
+  "CNF-GRU-2027-01-14": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:18:32.422969+00:00",
+   "saida": "7:50 AM on Thu, Jan 14"
+  },
+  "CNF-GRU-2027-01-15": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:19:12.919311+00:00",
+   "saida": "5:40 PM on Fri, Jan 15"
+  },
+  "CNF-GRU-2027-01-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:21:37.165765+00:00",
+   "saida": ""
+  },
+  "CNF-GRU-2027-01-22": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:22:18.976525+00:00",
+   "saida": "7:50 AM on Fri, Jan 22"
+  },
+  "CNF-GRU-2027-01-28": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:24:53.556547+00:00",
+   "saida": "11:00 AM on Thu, Jan 28"
+  },
+  "CNF-GRU-2027-01-29": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:25:36.730941+00:00",
+   "saida": ""
+  },
+  "CNF-GRU-2027-02-04": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:28:00.069960+00:00",
+   "saida": "10:15 AM on Thu, Feb 4"
+  },
+  "CNF-GRU-2027-02-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:28:41.717078+00:00",
+   "saida": "10:15 AM on Fri, Feb 5"
+  },
+  "CNF-GRU-2027-02-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:31:00.179225+00:00",
+   "saida": "4:55 AM on Thu, Feb 11"
+  },
+  "CNF-GRU-2027-02-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:31:38.926323+00:00",
+   "saida": ""
+  },
+  "CNF-GRU-2027-02-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:34:01.893806+00:00",
+   "saida": "10:15 AM on Thu, Feb 18"
+  },
+  "CNF-GRU-2027-02-19": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:34:44.417564+00:00",
+   "saida": "10:15 AM on Fri, Feb 19"
+  },
+  "CNF-GRU-2027-02-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:37:08.988267+00:00",
+   "saida": "10:15 AM on Thu, Feb 25"
+  },
+  "CNF-GRU-2027-02-26": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:37:54.121410+00:00",
+   "saida": ""
+  },
+  "CNF-GRU-2027-03-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:40:12.153643+00:00",
+   "saida": ""
+  },
+  "CNF-GRU-2027-03-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:40:55.429710+00:00",
+   "saida": "10:15 AM on Fri, Mar 5"
+  },
+  "CNF-GRU-2027-03-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:43:16.243390+00:00",
+   "saida": "10:15 AM on Thu, Mar 11"
+  },
+  "CNF-GRU-2027-03-12": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:44:02.760726+00:00",
+   "saida": "3:15 PM on Fri, Mar 12"
+  },
+  "CNF-GRU-2027-03-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:46:24.593994+00:00",
+   "saida": ""
+  },
+  "CNF-GRU-2027-03-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 245.0,
+   "quando": "2026-10-27T10:47:03.653334+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-01-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 937.0,
+   "quando": "2026-10-27T10:15:51.883258+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-01-08": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 937.0,
+   "quando": "2026-10-27T10:16:32.785989+00:00",
+   "saida": "4:55 AM on Fri, Jan 8"
+  },
+  "CNF-IGU-2027-01-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 937.0,
+   "quando": "2026-10-27T10:18:48.941352+00:00",
+   "saida": "6:00 AM on Thu, Jan 14"
+  },
+  "CNF-IGU-2027-01-15": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 937.0,
+   "quando": "2026-10-27T10:19:31.679705+00:00",
+   "saida": "4:55 AM on Fri, Jan 15"
+  },
+  "CNF-IGU-2027-01-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 820.0,
+   "quando": "2026-10-27T10:21:55.312317+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-01-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 820.0,
+   "quando": "2026-10-27T10:22:36.854379+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-01-28": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 820.0,
+   "quando": "2026-10-27T10:25:13.991602+00:00",
+   "saida": "4:00 PM on Thu, Jan 28"
+  },
+  "CNF-IGU-2027-01-29": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 820.0,
+   "quando": "2026-10-27T10:25:56.328242+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-02-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 1081.0,
+   "quando": "2026-10-27T10:28:17.852704+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-02-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 1081.0,
+   "quando": "2026-10-27T10:28:57.617596+00:00",
+   "saida": "4:55 AM on Fri, Feb 5"
+  },
+  "CNF-IGU-2027-02-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 820.0,
+   "quando": "2026-10-27T10:31:18.787173+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-02-12": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 820.0,
+   "quando": "2026-10-27T10:31:57.884772+00:00",
+   "saida": "4:55 AM on Fri, Feb 12"
+  },
+  "CNF-IGU-2027-02-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 741.0,
+   "quando": "2026-10-27T10:34:20.694608+00:00",
+   "saida": "7:25 AM on Thu, Feb 18"
+  },
+  "CNF-IGU-2027-02-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 741.0,
+   "quando": "2026-10-27T10:35:01.439069+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-02-25": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 741.0,
+   "quando": "2026-10-27T10:37:28.070645+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-02-26": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 741.0,
+   "quando": "2026-10-27T10:38:09.791705+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-03-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 741.0,
+   "quando": "2026-10-27T10:40:29.606050+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-03-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 741.0,
+   "quando": "2026-10-27T10:41:13.325092+00:00",
+   "saida": "6:00 AM on Fri, Mar 5"
+  },
+  "CNF-IGU-2027-03-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 741.0,
+   "quando": "2026-10-27T10:43:35.886016+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-03-12": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 741.0,
+   "quando": "2026-10-27T10:44:18.084715+00:00",
+   "saida": "6:30 AM on Fri, Mar 12"
+  },
+  "CNF-IGU-2027-03-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 741.0,
+   "quando": "2026-10-27T10:46:41.314893+00:00",
+   "saida": ""
+  },
+  "CNF-IGU-2027-03-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 741.0,
+   "quando": "2026-10-27T10:47:22.196467+00:00",
+   "saida": ""
+  },
+  "CNF-NVT-2027-01-07": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 593.0,
+   "quando": "2026-10-27T10:15:56.541354+00:00",
+   "saida": "8:25 PM on Thu, Jan 7"
+  },
+  "CNF-NVT-2027-01-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:16:40.275469+00:00",
+   "saida": "11:20 AM on Fri, Jan 8"
+  },
+  "CNF-NVT-2027-01-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:18:55.012598+00:00",
+   "saida": "6:35 PM on Thu, Jan 14"
+  },
+  "CNF-NVT-2027-01-15": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:19:36.534242+00:00",
+   "saida": "6:05 PM on Fri, Jan 15"
+  },
+  "CNF-NVT-2027-01-21": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:21:59.397819+00:00",
+   "saida": "6:35 PM on Thu, Jan 21"
+  },
+  "CNF-NVT-2027-01-22": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:22:42.997740+00:00",
+   "saida": "6:20 AM on Fri, Jan 22"
+  },
+  "CNF-NVT-2027-01-28": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:25:20.079486+00:00",
+   "saida": "6:20 AM on Thu, Jan 28"
+  },
+  "CNF-NVT-2027-01-29": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:26:02.473065+00:00",
+   "saida": "6:05 AM on Fri, Jan 29"
+  },
+  "CNF-NVT-2027-02-04": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:28:23.683109+00:00",
+   "saida": "7:20 AM on Thu, Feb 4"
+  },
+  "CNF-NVT-2027-02-05": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 591.0,
+   "quando": "2026-10-27T10:29:02.619325+00:00",
+   "saida": "6:05 AM on Fri, Feb 5"
+  },
+  "CNF-NVT-2027-02-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 371.0,
+   "quando": "2026-10-27T10:31:22.588373+00:00",
+   "saida": ""
+  },
+  "CNF-NVT-2027-02-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:32:02.966101+00:00",
+   "saida": "7:20 AM on Fri, Feb 12"
+  },
+  "CNF-NVT-2027-02-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:34:24.666646+00:00",
+   "saida": ""
+  },
+  "CNF-NVT-2027-02-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:35:07.173350+00:00",
+   "saida": ""
+  },
+  "CNF-NVT-2027-02-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:37:32.568906+00:00",
+   "saida": "11:20 AM on Thu, Feb 25"
+  },
+  "CNF-NVT-2027-02-26": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:38:15.246001+00:00",
+   "saida": "9:45 AM on Fri, Feb 26"
+  },
+  "CNF-NVT-2027-03-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:40:35.809462+00:00",
+   "saida": ""
+  },
+  "CNF-NVT-2027-03-05": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:41:19.433727+00:00",
+   "saida": ""
+  },
+  "CNF-NVT-2027-03-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:43:41.474193+00:00",
+   "saida": "3:05 PM on Thu, Mar 11"
+  },
+  "CNF-NVT-2027-03-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:44:23.404023+00:00",
+   "saida": "5:25 AM on Fri, Mar 12"
+  },
+  "CNF-NVT-2027-03-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:46:45.702187+00:00",
+   "saida": ""
+  },
+  "CNF-NVT-2027-03-19": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 318.0,
+   "quando": "2026-10-27T10:47:27.609344+00:00",
+   "saida": "5:50 PM on Fri, Mar 19"
+  },
   "CNF-OPS-2026-12-18": {
    "cia": "LATAM",
    "moeda_original": "BRL",
@@ -67,6 +3420,1214 @@
    "quando": "2026-10-27T04:13:00.735860+00:00",
    "saida": "4:55 AM on Fri, Dec 18"
   },
+  "CNF-OPS-2026-12-19": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 1226.0,
+   "quando": "2026-10-27T10:14:49.989992+00:00",
+   "saida": "6:00 AM on Sat, Dec 19"
+  },
+  "CNF-OPS-2026-12-20": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 1226.0,
+   "quando": "2026-10-27T10:14:56.069387+00:00",
+   "saida": "6:00 AM on Sun, Dec 20"
+  },
+  "CNF-PMW-2027-01-07": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 749.0,
+   "quando": "2026-10-27T10:16:09.328143+00:00",
+   "saida": "6:30 AM on Thu, Jan 7"
+  },
+  "CNF-PMW-2027-01-08": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 749.0,
+   "quando": "2026-10-27T10:16:50.253028+00:00",
+   "saida": ""
+  },
+  "CNF-PMW-2027-01-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 408.0,
+   "quando": "2026-10-27T10:19:04.681073+00:00",
+   "saida": "12:10 PM on Thu, Jan 14"
+  },
+  "CNF-PMW-2027-01-21": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 408.0,
+   "quando": "2026-10-27T10:22:10.841517+00:00",
+   "saida": "12:10 PM on Thu, Jan 21"
+  },
+  "CNF-PMW-2027-01-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 408.0,
+   "quando": "2026-10-27T10:22:53.718482+00:00",
+   "saida": ""
+  },
+  "CNF-PMW-2027-01-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 408.0,
+   "quando": "2026-10-27T10:25:29.767594+00:00",
+   "saida": ""
+  },
+  "CNF-PMW-2027-01-29": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 567.0,
+   "quando": "2026-10-27T10:26:12.476080+00:00",
+   "saida": ""
+  },
+  "CNF-PMW-2027-02-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 661.0,
+   "quando": "2026-10-27T10:28:34.179041+00:00",
+   "saida": ""
+  },
+  "CNF-PMW-2027-02-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 797.0,
+   "quando": "2026-10-27T10:29:11.872729+00:00",
+   "saida": "6:25 PM on Fri, Feb 5"
+  },
+  "CNF-PMW-2027-02-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 408.0,
+   "quando": "2026-10-27T10:31:33.043669+00:00",
+   "saida": "12:10 PM on Thu, Feb 11"
+  },
+  "CNF-PMW-2027-02-12": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 661.0,
+   "quando": "2026-10-27T10:32:13.224173+00:00",
+   "saida": "6:30 AM on Fri, Feb 12"
+  },
+  "CNF-PMW-2027-02-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 661.0,
+   "quando": "2026-10-27T10:34:35.081115+00:00",
+   "saida": "6:30 AM on Thu, Feb 18"
+  },
+  "CNF-PMW-2027-02-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 408.0,
+   "quando": "2026-10-27T10:35:17.344325+00:00",
+   "saida": ""
+  },
+  "CNF-PMW-2027-02-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 744.0,
+   "quando": "2026-10-27T10:37:45.233498+00:00",
+   "saida": "4:45 PM on Thu, Feb 25"
+  },
+  "CNF-PMW-2027-02-26": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 661.0,
+   "quando": "2026-10-27T10:38:25.109995+00:00",
+   "saida": ""
+  },
+  "CNF-PMW-2027-03-04": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 408.0,
+   "quando": "2026-10-27T10:40:48.622863+00:00",
+   "saida": "5:50 PM on Thu, Mar 4"
+  },
+  "CNF-PMW-2027-03-05": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 408.0,
+   "quando": "2026-10-27T10:41:28.702135+00:00",
+   "saida": ""
+  },
+  "CNF-PMW-2027-03-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 408.0,
+   "quando": "2026-10-27T10:43:53.425330+00:00",
+   "saida": "5:50 PM on Thu, Mar 11"
+  },
+  "CNF-PMW-2027-03-12": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 408.0,
+   "quando": "2026-10-27T10:44:33.855772+00:00",
+   "saida": "5:50 PM on Fri, Mar 12"
+  },
+  "CNF-PMW-2027-03-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 408.0,
+   "quando": "2026-10-27T10:46:56.925114+00:00",
+   "saida": "5:50 PM on Thu, Mar 18"
+  },
+  "CNF-PMW-2027-03-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 567.0,
+   "quando": "2026-10-27T10:47:36.652600+00:00",
+   "saida": ""
+  },
+  "CNF-SDU-2027-01-07": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:15:42.457714+00:00",
+   "saida": "11:05 AM on Thu, Jan 7"
+  },
+  "CNF-SDU-2027-01-08": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:16:24.690856+00:00",
+   "saida": "6:20 AM on Fri, Jan 8"
+  },
+  "CNF-SDU-2027-01-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 542.0,
+   "quando": "2026-10-27T10:18:42.093513+00:00",
+   "saida": ""
+  },
+  "CNF-SDU-2027-01-15": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 454.0,
+   "quando": "2026-10-27T10:19:23.365912+00:00",
+   "saida": "4:00 PM on Fri, Jan 15"
+  },
+  "CNF-SDU-2027-01-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:21:46.309048+00:00",
+   "saida": ""
+  },
+  "CNF-SDU-2027-01-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 442.0,
+   "quando": "2026-10-27T10:22:28.780290+00:00",
+   "saida": ""
+  },
+  "CNF-SDU-2027-01-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:25:03.957250+00:00",
+   "saida": ""
+  },
+  "CNF-SDU-2027-01-29": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:25:48.491420+00:00",
+   "saida": "4:00 PM on Fri, Jan 29"
+  },
+  "CNF-SDU-2027-02-04": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 714.0,
+   "quando": "2026-10-27T10:28:10.814505+00:00",
+   "saida": "6:35 AM on Thu, Feb 4"
+  },
+  "CNF-SDU-2027-02-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 968.0,
+   "quando": "2026-10-27T10:28:49.594785+00:00",
+   "saida": "6:00 AM on Fri, Feb 5"
+  },
+  "CNF-SDU-2027-02-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 442.0,
+   "quando": "2026-10-27T10:31:10.318274+00:00",
+   "saida": ""
+  },
+  "CNF-SDU-2027-02-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 442.0,
+   "quando": "2026-10-27T10:31:48.936055+00:00",
+   "saida": ""
+  },
+  "CNF-SDU-2027-02-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:34:12.937948+00:00",
+   "saida": ""
+  },
+  "CNF-SDU-2027-02-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:34:54.251905+00:00",
+   "saida": ""
+  },
+  "CNF-SDU-2027-02-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:37:20.024103+00:00",
+   "saida": "7:25 AM on Thu, Feb 25"
+  },
+  "CNF-SDU-2027-02-26": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:38:03.574694+00:00",
+   "saida": "7:25 AM on Fri, Feb 26"
+  },
+  "CNF-SDU-2027-03-04": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:40:21.599952+00:00",
+   "saida": "4:55 AM on Thu, Mar 4"
+  },
+  "CNF-SDU-2027-03-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:41:04.619288+00:00",
+   "saida": "7:25 AM on Fri, Mar 5"
+  },
+  "CNF-SDU-2027-03-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:43:25.998000+00:00",
+   "saida": ""
+  },
+  "CNF-SDU-2027-03-12": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:44:11.618167+00:00",
+   "saida": "4:45 PM on Fri, Mar 12"
+  },
+  "CNF-SDU-2027-03-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 401.0,
+   "quando": "2026-10-27T10:46:33.893799+00:00",
+   "saida": "7:25 AM on Thu, Mar 18"
+  },
+  "CNF-SDU-2027-03-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 442.0,
+   "quando": "2026-10-27T10:47:14.493854+00:00",
+   "saida": ""
+  },
+  "CNF-SSA-2027-01-07": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 533.0,
+   "quando": "2026-10-27T10:15:59.486366+00:00",
+   "saida": "5:05 PM on Thu, Jan 7"
+  },
+  "CNF-SSA-2027-01-08": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 571.0,
+   "quando": "2026-10-27T10:16:42.405615+00:00",
+   "saida": ""
+  },
+  "CNF-SSA-2027-01-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 533.0,
+   "quando": "2026-10-27T10:18:56.909053+00:00",
+   "saida": "6:30 AM on Thu, Jan 14"
+  },
+  "CNF-SSA-2027-01-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 533.0,
+   "quando": "2026-10-27T10:19:38.926799+00:00",
+   "saida": ""
+  },
+  "CNF-SSA-2027-01-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 468.0,
+   "quando": "2026-10-27T10:22:02.175137+00:00",
+   "saida": ""
+  },
+  "CNF-SSA-2027-01-22": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 468.0,
+   "quando": "2026-10-27T10:22:46.339964+00:00",
+   "saida": "6:25 PM on Fri, Jan 22"
+  },
+  "CNF-SSA-2027-01-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 468.0,
+   "quando": "2026-10-27T10:25:21.639125+00:00",
+   "saida": ""
+  },
+  "CNF-SSA-2027-01-29": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 468.0,
+   "quando": "2026-10-27T10:26:04.951219+00:00",
+   "saida": "6:25 PM on Fri, Jan 29"
+  },
+  "CNF-SSA-2027-02-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 848.0,
+   "quando": "2026-10-27T10:28:25.986159+00:00",
+   "saida": ""
+  },
+  "CNF-SSA-2027-02-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 995.0,
+   "quando": "2026-10-27T10:29:04.540561+00:00",
+   "saida": "1:10 PM on Fri, Feb 5"
+  },
+  "CNF-SSA-2027-02-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 517.0,
+   "quando": "2026-10-27T10:31:24.289468+00:00",
+   "saida": ""
+  },
+  "CNF-SSA-2027-02-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 460.0,
+   "quando": "2026-10-27T10:32:05.816505+00:00",
+   "saida": ""
+  },
+  "CNF-SSA-2027-02-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 460.0,
+   "quando": "2026-10-27T10:34:27.003953+00:00",
+   "saida": "7:10 AM on Thu, Feb 18"
+  },
+  "CNF-SSA-2027-02-19": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 460.0,
+   "quando": "2026-10-27T10:35:10.018787+00:00",
+   "saida": "12:10 PM on Fri, Feb 19"
+  },
+  "CNF-SSA-2027-02-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 460.0,
+   "quando": "2026-10-27T10:37:35.554192+00:00",
+   "saida": "6:05 AM on Thu, Feb 25"
+  },
+  "CNF-SSA-2027-02-26": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 460.0,
+   "quando": "2026-10-27T10:38:17.611191+00:00",
+   "saida": "12:10 PM on Fri, Feb 26"
+  },
+  "CNF-SSA-2027-03-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 460.0,
+   "quando": "2026-10-27T10:40:38.490520+00:00",
+   "saida": ""
+  },
+  "CNF-SSA-2027-03-05": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 460.0,
+   "quando": "2026-10-27T10:41:21.251139+00:00",
+   "saida": ""
+  },
+  "CNF-SSA-2027-03-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 460.0,
+   "quando": "2026-10-27T10:43:44.495754+00:00",
+   "saida": "8:15 AM on Thu, Mar 11"
+  },
+  "CNF-SSA-2027-03-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 460.0,
+   "quando": "2026-10-27T10:44:26.256060+00:00",
+   "saida": ""
+  },
+  "CNF-SSA-2027-03-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 460.0,
+   "quando": "2026-10-27T10:46:48.401354+00:00",
+   "saida": "6:15 AM on Thu, Mar 18"
+  },
+  "CNF-SSA-2027-03-19": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 460.0,
+   "quando": "2026-10-27T10:47:30.121134+00:00",
+   "saida": "5:30 AM on Fri, Mar 19"
+  },
+  "CNF-VCP-2027-01-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 365.0,
+   "quando": "2026-10-27T10:15:37.275010+00:00",
+   "saida": ""
+  },
+  "CNF-VCP-2027-01-08": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 280.0,
+   "quando": "2026-10-27T10:16:20.926052+00:00",
+   "saida": "6:00 AM on Fri, Jan 8"
+  },
+  "CNF-VCP-2027-01-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 280.0,
+   "quando": "2026-10-27T10:18:37.020388+00:00",
+   "saida": ""
+  },
+  "CNF-VCP-2027-01-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 280.0,
+   "quando": "2026-10-27T10:19:16.812151+00:00",
+   "saida": ""
+  },
+  "CNF-VCP-2027-01-21": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 363.0,
+   "quando": "2026-10-27T10:21:41.177076+00:00",
+   "saida": "6:00 AM on Thu, Jan 21"
+  },
+  "CNF-VCP-2027-01-22": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 248.0,
+   "quando": "2026-10-27T10:22:24.417902+00:00",
+   "saida": "1:10 PM on Fri, Jan 22"
+  },
+  "CNF-VCP-2027-01-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 248.0,
+   "quando": "2026-10-27T10:24:58.666799+00:00",
+   "saida": ""
+  },
+  "CNF-VCP-2027-01-29": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 248.0,
+   "quando": "2026-10-27T10:25:41.633670+00:00",
+   "saida": ""
+  },
+  "CNF-VCP-2027-02-04": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 365.0,
+   "quando": "2026-10-27T10:28:03.915487+00:00",
+   "saida": "9:55 AM on Thu, Feb 4"
+  },
+  "CNF-VCP-2027-02-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 363.0,
+   "quando": "2026-10-27T10:28:44.701103+00:00",
+   "saida": "6:00 AM on Fri, Feb 5"
+  },
+  "CNF-VCP-2027-02-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 363.0,
+   "quando": "2026-10-27T10:31:05.308052+00:00",
+   "saida": ""
+  },
+  "CNF-VCP-2027-02-12": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 330.0,
+   "quando": "2026-10-27T10:31:43.467057+00:00",
+   "saida": "1:10 PM on Fri, Feb 12"
+  },
+  "CNF-VCP-2027-02-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 236.0,
+   "quando": "2026-10-27T10:34:07.331166+00:00",
+   "saida": ""
+  },
+  "CNF-VCP-2027-02-19": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 226.0,
+   "quando": "2026-10-27T10:34:49.924250+00:00",
+   "saida": "6:00 AM on Fri, Feb 19"
+  },
+  "CNF-VCP-2027-02-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 248.0,
+   "quando": "2026-10-27T10:37:13.435356+00:00",
+   "saida": "6:00 AM on Thu, Feb 25"
+  },
+  "CNF-VCP-2027-02-26": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 226.0,
+   "quando": "2026-10-27T10:37:58.604736+00:00",
+   "saida": ""
+  },
+  "CNF-VCP-2027-03-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 248.0,
+   "quando": "2026-10-27T10:40:16.589113+00:00",
+   "saida": ""
+  },
+  "CNF-VCP-2027-03-05": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 236.0,
+   "quando": "2026-10-27T10:41:00.211014+00:00",
+   "saida": "2:25 PM on Fri, Mar 5"
+  },
+  "CNF-VCP-2027-03-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 236.0,
+   "quando": "2026-10-27T10:43:21.060938+00:00",
+   "saida": "6:15 AM on Thu, Mar 11"
+  },
+  "CNF-VCP-2027-03-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 236.0,
+   "quando": "2026-10-27T10:44:06.800267+00:00",
+   "saida": ""
+  },
+  "CNF-VCP-2027-03-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 236.0,
+   "quando": "2026-10-27T10:46:29.574638+00:00",
+   "saida": "6:15 AM on Thu, Mar 18"
+  },
+  "CNF-VCP-2027-03-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 236.0,
+   "quando": "2026-10-27T10:47:09.645177+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-01-07": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 530.0,
+   "quando": "2026-10-27T10:15:45.759204+00:00",
+   "saida": "1:00 PM on Thu, Jan 7"
+  },
+  "CNF-VIX-2027-01-08": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 523.0,
+   "quando": "2026-10-27T10:16:27.335946+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-01-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 530.0,
+   "quando": "2026-10-27T10:18:44.529729+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-01-15": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 523.0,
+   "quando": "2026-10-27T10:19:26.266140+00:00",
+   "saida": "3:05 PM on Fri, Jan 15"
+  },
+  "CNF-VIX-2027-01-21": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 466.0,
+   "quando": "2026-10-27T10:21:49.064041+00:00",
+   "saida": "9:00 AM on Thu, Jan 21"
+  },
+  "CNF-VIX-2027-01-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 466.0,
+   "quando": "2026-10-27T10:22:31.737264+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-01-28": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:25:07.274405+00:00",
+   "saida": "9:00 AM on Thu, Jan 28"
+  },
+  "CNF-VIX-2027-01-29": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:25:50.543474+00:00",
+   "saida": "9:00 AM on Fri, Jan 29"
+  },
+  "CNF-VIX-2027-02-04": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:28:13.049502+00:00",
+   "saida": "9:10 AM on Thu, Feb 4"
+  },
+  "CNF-VIX-2027-02-05": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:28:51.878301+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-02-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:31:13.457235+00:00",
+   "saida": "4:55 AM on Thu, Feb 11"
+  },
+  "CNF-VIX-2027-02-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:31:51.231360+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-02-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:34:15.870600+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-02-19": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:34:57.025553+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-02-25": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:37:22.548606+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-02-26": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:38:05.235727+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-03-04": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:40:24.684455+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-03-05": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:41:07.388250+00:00",
+   "saida": "4:55 AM on Fri, Mar 5"
+  },
+  "CNF-VIX-2027-03-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:43:29.569481+00:00",
+   "saida": "9:00 AM on Thu, Mar 11"
+  },
+  "CNF-VIX-2027-03-12": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:44:13.886904+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-03-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:46:36.017695+00:00",
+   "saida": ""
+  },
+  "CNF-VIX-2027-03-19": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 425.0,
+   "quando": "2026-10-27T10:47:17.449846+00:00",
+   "saida": "4:55 AM on Fri, Mar 19"
+  },
+  "CWB-CNF-2027-01-10": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 660.0,
+   "quando": "2026-10-27T10:17:16.184853+00:00",
+   "saida": "12:30 PM on Sun, Jan 10"
+  },
+  "CWB-CNF-2027-01-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 384.0,
+   "quando": "2026-10-27T10:17:56.791720+00:00",
+   "saida": "11:05 AM on Mon, Jan 11"
+  },
+  "CWB-CNF-2027-01-17": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 615.0,
+   "quando": "2026-10-27T10:20:15.761196+00:00",
+   "saida": "9:00 AM on Sun, Jan 17"
+  },
+  "CWB-CNF-2027-01-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 384.0,
+   "quando": "2026-10-27T10:20:59.363126+00:00",
+   "saida": "1:05 PM on Mon, Jan 18"
+  },
+  "CWB-CNF-2027-01-24": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 615.0,
+   "quando": "2026-10-27T10:23:27.750268+00:00",
+   "saida": "8:15 AM on Sun, Jan 24"
+  },
+  "CWB-CNF-2027-01-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 467.0,
+   "quando": "2026-10-27T10:24:10.615761+00:00",
+   "saida": "6:00 AM on Mon, Jan 25"
+  },
+  "CWB-CNF-2027-01-31": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 467.0,
+   "quando": "2026-10-27T10:26:41.559888+00:00",
+   "saida": ""
+  },
+  "CWB-CNF-2027-02-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 467.0,
+   "quando": "2026-10-27T10:27:24.764498+00:00",
+   "saida": ""
+  },
+  "CWB-CNF-2027-02-09": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 331.0,
+   "quando": "2026-10-27T10:29:52.048285+00:00",
+   "saida": "11:00 AM on Tue, Feb 9"
+  },
+  "CWB-CNF-2027-02-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 615.0,
+   "quando": "2026-10-27T10:30:32.952214+00:00",
+   "saida": ""
+  },
+  "CWB-CNF-2027-02-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 467.0,
+   "quando": "2026-10-27T10:32:44.985497+00:00",
+   "saida": "6:00 AM on Sun, Feb 14"
+  },
+  "CWB-CNF-2027-02-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 384.0,
+   "quando": "2026-10-27T10:33:26.428696+00:00",
+   "saida": ""
+  },
+  "CWB-CNF-2027-02-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 331.0,
+   "quando": "2026-10-27T10:35:46.586001+00:00",
+   "saida": ""
+  },
+  "CWB-CNF-2027-02-22": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 331.0,
+   "quando": "2026-10-27T10:36:30.204706+00:00",
+   "saida": "8:45 AM on Mon, Feb 22"
+  },
+  "CWB-CNF-2027-02-28": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 331.0,
+   "quando": "2026-10-27T10:38:56.444009+00:00",
+   "saida": "9:15 AM on Sun, Feb 28"
+  },
+  "CWB-CNF-2027-03-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 331.0,
+   "quando": "2026-10-27T10:39:32.765251+00:00",
+   "saida": ""
+  },
+  "CWB-CNF-2027-03-07": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 331.0,
+   "quando": "2026-10-27T10:41:57.729249+00:00",
+   "saida": "4:50 AM on Sun, Mar 7"
+  },
+  "CWB-CNF-2027-03-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 331.0,
+   "quando": "2026-10-27T10:42:39.437528+00:00",
+   "saida": "4:50 AM on Mon, Mar 8"
+  },
+  "CWB-CNF-2027-03-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 331.0,
+   "quando": "2026-10-27T10:45:04.693264+00:00",
+   "saida": ""
+  },
+  "CWB-CNF-2027-03-15": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 331.0,
+   "quando": "2026-10-27T10:45:46.370674+00:00",
+   "saida": "6:35 PM on Mon, Mar 15"
+  },
+  "FLN-CNF-2027-01-10": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 573.0,
+   "quando": "2026-10-27T10:17:20.646800+00:00",
+   "saida": "1:40 PM on Sun, Jan 10"
+  },
+  "FLN-CNF-2027-01-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 475.0,
+   "quando": "2026-10-27T10:18:01.312394+00:00",
+   "saida": "5:15 PM on Mon, Jan 11"
+  },
+  "FLN-CNF-2027-01-17": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 475.0,
+   "quando": "2026-10-27T10:20:20.644984+00:00",
+   "saida": "1:00 PM on Sun, Jan 17"
+  },
+  "FLN-CNF-2027-01-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 506.0,
+   "quando": "2026-10-27T10:21:05.009665+00:00",
+   "saida": "5:30 AM on Mon, Jan 18"
+  },
+  "FLN-CNF-2027-01-24": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 506.0,
+   "quando": "2026-10-27T10:23:32.761539+00:00",
+   "saida": ""
+  },
+  "FLN-CNF-2027-01-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 551.0,
+   "quando": "2026-10-27T10:24:17.605211+00:00",
+   "saida": "8:45 AM on Mon, Jan 25"
+  },
+  "FLN-CNF-2027-01-31": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 502.0,
+   "quando": "2026-10-27T10:26:46.943009+00:00",
+   "saida": ""
+  },
+  "FLN-CNF-2027-02-01": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 502.0,
+   "quando": "2026-10-27T10:27:30.437008+00:00",
+   "saida": "7:30 PM on Mon, Feb 1"
+  },
+  "FLN-CNF-2027-02-09": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 475.0,
+   "quando": "2026-10-27T10:29:57.876693+00:00",
+   "saida": "5:30 AM on Tue, Feb 9"
+  },
+  "FLN-CNF-2027-02-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 676.0,
+   "quando": "2026-10-27T10:30:37.231068+00:00",
+   "saida": ""
+  },
+  "FLN-CNF-2027-02-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 676.0,
+   "quando": "2026-10-27T10:32:50.337766+00:00",
+   "saida": ""
+  },
+  "FLN-CNF-2027-02-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 475.0,
+   "quando": "2026-10-27T10:33:32.260845+00:00",
+   "saida": ""
+  },
+  "FLN-CNF-2027-02-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 339.0,
+   "quando": "2026-10-27T10:35:51.387703+00:00",
+   "saida": ""
+  },
+  "FLN-CNF-2027-02-22": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 339.0,
+   "quando": "2026-10-27T10:36:36.561868+00:00",
+   "saida": "12:15 PM on Mon, Feb 22"
+  },
+  "FLN-CNF-2027-02-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 339.0,
+   "quando": "2026-10-27T10:39:00.101247+00:00",
+   "saida": ""
+  },
+  "FLN-CNF-2027-03-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 339.0,
+   "quando": "2026-10-27T10:39:37.624392+00:00",
+   "saida": ""
+  },
+  "FLN-CNF-2027-03-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 339.0,
+   "quando": "2026-10-27T10:42:03.169773+00:00",
+   "saida": ""
+  },
+  "FLN-CNF-2027-03-08": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 339.0,
+   "quando": "2026-10-27T10:42:44.308606+00:00",
+   "saida": ""
+  },
+  "FLN-CNF-2027-03-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 339.0,
+   "quando": "2026-10-27T10:45:10.491050+00:00",
+   "saida": "4:35 AM on Sun, Mar 14"
+  },
+  "FLN-CNF-2027-03-15": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 339.0,
+   "quando": "2026-10-27T10:45:52.425940+00:00",
+   "saida": "10:50 AM on Mon, Mar 15"
+  },
   "GIG-CNF-2027-01-10": {
    "cia": "LATAM",
    "moeda_original": "BRL",
@@ -74,7 +4635,1434 @@
    "preco": 613.0,
    "quando": "2026-10-27T04:12:58.089938+00:00",
    "saida": "5:25 AM on Sun, Jan 10"
+  },
+  "GIG-CNF-2027-01-17": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 649.0,
+   "quando": "2026-10-27T10:20:07.266768+00:00",
+   "saida": "8:55 PM on Sun, Jan 17"
+  },
+  "GIG-CNF-2027-01-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 448.0,
+   "quando": "2026-10-27T10:20:51.545570+00:00",
+   "saida": ""
+  },
+  "GIG-CNF-2027-01-24": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 410.0,
+   "quando": "2026-10-27T10:23:19.209827+00:00",
+   "saida": "5:25 AM on Sun, Jan 24"
+  },
+  "GIG-CNF-2027-01-25": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 448.0,
+   "quando": "2026-10-27T10:24:00.432570+00:00",
+   "saida": ""
+  },
+  "GIG-CNF-2027-01-31": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 448.0,
+   "quando": "2026-10-27T10:26:32.807717+00:00",
+   "saida": "6:00 AM on Sun, Jan 31"
+  },
+  "GIG-CNF-2027-02-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 410.0,
+   "quando": "2026-10-27T10:27:17.680433+00:00",
+   "saida": ""
+  },
+  "GIG-CNF-2027-02-09": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:29:42.938364+00:00",
+   "saida": ""
+  },
+  "GIG-CNF-2027-02-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 692.0,
+   "quando": "2026-10-27T10:30:24.833930+00:00",
+   "saida": ""
+  },
+  "GIG-CNF-2027-02-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:32:35.658162+00:00",
+   "saida": "11:00 PM on Sun, Feb 14"
+  },
+  "GIG-CNF-2027-02-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:33:19.756067+00:00",
+   "saida": ""
+  },
+  "GIG-CNF-2027-02-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:35:38.530646+00:00",
+   "saida": ""
+  },
+  "GIG-CNF-2027-02-22": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:36:22.433109+00:00",
+   "saida": "4:40 PM on Mon, Feb 22"
+  },
+  "GIG-CNF-2027-02-28": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:38:47.313573+00:00",
+   "saida": "5:35 AM on Sun, Feb 28"
+  },
+  "GIG-CNF-2027-03-01": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:39:26.369885+00:00",
+   "saida": "6:00 AM on Mon, Mar 1"
+  },
+  "GIG-CNF-2027-03-07": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:41:49.717776+00:00",
+   "saida": "7:40 AM on Sun, Mar 7"
+  },
+  "GIG-CNF-2027-03-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:42:30.937285+00:00",
+   "saida": "6:00 AM on Mon, Mar 8"
+  },
+  "GIG-CNF-2027-03-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:44:55.823270+00:00",
+   "saida": ""
+  },
+  "GIG-CNF-2027-03-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 349.0,
+   "quando": "2026-10-27T10:45:36.933138+00:00",
+   "saida": ""
+  },
+  "GRU-CNF-2027-01-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:17:03.238933+00:00",
+   "saida": ""
+  },
+  "GRU-CNF-2027-01-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:17:41.081833+00:00",
+   "saida": ""
+  },
+  "GRU-CNF-2027-01-17": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:19:59.840033+00:00",
+   "saida": "6:00 AM on Sun, Jan 17"
+  },
+  "GRU-CNF-2027-01-18": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:20:43.980005+00:00",
+   "saida": "7:50 PM on Mon, Jan 18"
+  },
+  "GRU-CNF-2027-01-24": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:23:09.442374+00:00",
+   "saida": "6:00 AM on Sun, Jan 24"
+  },
+  "GRU-CNF-2027-01-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:23:53.094955+00:00",
+   "saida": "4:30 PM on Mon, Jan 25"
+  },
+  "GRU-CNF-2027-01-31": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 225.0,
+   "quando": "2026-10-27T10:26:25.115385+00:00",
+   "saida": ""
+  },
+  "GRU-CNF-2027-02-01": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:27:10.678785+00:00",
+   "saida": "4:30 PM on Mon, Feb 1"
+  },
+  "GRU-CNF-2027-02-09": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:29:35.347969+00:00",
+   "saida": ""
+  },
+  "GRU-CNF-2027-02-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:30:17.133230+00:00",
+   "saida": ""
+  },
+  "GRU-CNF-2027-02-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:32:26.243084+00:00",
+   "saida": "11:15 AM on Sun, Feb 14"
+  },
+  "GRU-CNF-2027-02-15": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:33:13.219811+00:00",
+   "saida": "1:10 PM on Mon, Feb 15"
+  },
+  "GRU-CNF-2027-02-21": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:35:31.414142+00:00",
+   "saida": "11:15 AM on Sun, Feb 21"
+  },
+  "GRU-CNF-2027-02-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:36:13.670284+00:00",
+   "saida": ""
+  },
+  "GRU-CNF-2027-02-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:38:39.812854+00:00",
+   "saida": ""
+  },
+  "GRU-CNF-2027-03-01": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:39:20.506707+00:00",
+   "saida": "11:15 AM on Mon, Mar 1"
+  },
+  "GRU-CNF-2027-03-07": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:41:41.672938+00:00",
+   "saida": "11:15 AM on Sun, Mar 7"
+  },
+  "GRU-CNF-2027-03-08": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:42:22.854592+00:00",
+   "saida": "11:15 AM on Mon, Mar 8"
+  },
+  "GRU-CNF-2027-03-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:44:48.276882+00:00",
+   "saida": "8:20 AM on Sun, Mar 14"
+  },
+  "GRU-CNF-2027-03-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 223.0,
+   "quando": "2026-10-27T10:45:29.136021+00:00",
+   "saida": ""
+  },
+  "GRU-CNF-2027-03-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 374.0,
+   "quando": "2026-10-27T10:47:48.856893+00:00",
+   "saida": ""
+  },
+  "IGU-CNF-2027-01-10": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 951.0,
+   "quando": "2026-10-27T10:17:18.065063+00:00",
+   "saida": "10:45 AM on Sun, Jan 10"
+  },
+  "IGU-CNF-2027-01-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 951.0,
+   "quando": "2026-10-27T10:17:58.792407+00:00",
+   "saida": "5:00 AM on Mon, Jan 11"
+  },
+  "IGU-CNF-2027-01-17": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 834.0,
+   "quando": "2026-10-27T10:20:17.514425+00:00",
+   "saida": ""
+  },
+  "IGU-CNF-2027-01-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 834.0,
+   "quando": "2026-10-27T10:21:01.671419+00:00",
+   "saida": ""
+  },
+  "IGU-CNF-2027-01-24": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 834.0,
+   "quando": "2026-10-27T10:23:30.399828+00:00",
+   "saida": "5:00 AM on Sun, Jan 24"
+  },
+  "IGU-CNF-2027-01-25": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 834.0,
+   "quando": "2026-10-27T10:24:13.467282+00:00",
+   "saida": ""
+  },
+  "IGU-CNF-2027-01-31": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 834.0,
+   "quando": "2026-10-27T10:26:45.126884+00:00",
+   "saida": "5:00 AM on Sun, Jan 31"
+  },
+  "IGU-CNF-2027-02-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 834.0,
+   "quando": "2026-10-27T10:27:27.577220+00:00",
+   "saida": ""
+  },
+  "IGU-CNF-2027-02-09": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 834.0,
+   "quando": "2026-10-27T10:29:54.826964+00:00",
+   "saida": ""
+  },
+  "IGU-CNF-2027-02-10": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 1095.0,
+   "quando": "2026-10-27T10:30:34.974527+00:00",
+   "saida": "4:15 AM on Wed, Feb 10"
+  },
+  "IGU-CNF-2027-02-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 1095.0,
+   "quando": "2026-10-27T10:32:47.703109+00:00",
+   "saida": "4:20 AM on Sun, Feb 14"
+  },
+  "IGU-CNF-2027-02-15": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 857.0,
+   "quando": "2026-10-27T10:33:29.945564+00:00",
+   "saida": "5:00 AM on Mon, Feb 15"
+  },
+  "IGU-CNF-2027-02-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 755.0,
+   "quando": "2026-10-27T10:35:48.896768+00:00",
+   "saida": ""
+  },
+  "IGU-CNF-2027-02-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 755.0,
+   "quando": "2026-10-27T10:38:58.458359+00:00",
+   "saida": ""
+  },
+  "IGU-CNF-2027-03-01": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 755.0,
+   "quando": "2026-10-27T10:39:35.918248+00:00",
+   "saida": "10:45 AM on Mon, Mar 1"
+  },
+  "IGU-CNF-2027-03-07": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 755.0,
+   "quando": "2026-10-27T10:42:00.550290+00:00",
+   "saida": "5:25 PM on Sun, Mar 7"
+  },
+  "IGU-CNF-2027-03-08": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 755.0,
+   "quando": "2026-10-27T10:42:41.897378+00:00",
+   "saida": "4:15 AM on Mon, Mar 8"
+  },
+  "IGU-CNF-2027-03-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 834.0,
+   "quando": "2026-10-27T10:45:07.385034+00:00",
+   "saida": ""
+  },
+  "IGU-CNF-2027-03-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 755.0,
+   "quando": "2026-10-27T10:45:48.738084+00:00",
+   "saida": ""
+  },
+  "NVT-CNF-2027-01-10": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:17:23.283939+00:00",
+   "saida": "9:50 AM on Sun, Jan 10"
+  },
+  "NVT-CNF-2027-01-11": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:18:04.718563+00:00",
+   "saida": "9:05 AM on Mon, Jan 11"
+  },
+  "NVT-CNF-2027-01-17": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 536.0,
+   "quando": "2026-10-27T10:20:23.790457+00:00",
+   "saida": "11:30 AM on Sun, Jan 17"
+  },
+  "NVT-CNF-2027-01-18": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:21:07.597241+00:00",
+   "saida": "9:05 AM on Mon, Jan 18"
+  },
+  "NVT-CNF-2027-01-24": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 386.0,
+   "quando": "2026-10-27T10:23:34.928740+00:00",
+   "saida": ""
+  },
+  "NVT-CNF-2027-01-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:24:21.326564+00:00",
+   "saida": "5:40 AM on Mon, Jan 25"
+  },
+  "NVT-CNF-2027-01-31": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 386.0,
+   "quando": "2026-10-27T10:26:50.174858+00:00",
+   "saida": "5:45 AM on Sun, Jan 31"
+  },
+  "NVT-CNF-2027-02-01": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 386.0,
+   "quando": "2026-10-27T10:27:32.975650+00:00",
+   "saida": "5:40 AM on Mon, Feb 1"
+  },
+  "NVT-CNF-2027-02-09": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 333.0,
+   "quando": "2026-10-27T10:30:00.331620+00:00",
+   "saida": "8:35 PM on Tue, Feb 9"
+  },
+  "NVT-CNF-2027-02-10": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:30:40.121765+00:00",
+   "saida": "5:40 AM on Wed, Feb 10"
+  },
+  "NVT-CNF-2027-02-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 386.0,
+   "quando": "2026-10-27T10:32:53.355293+00:00",
+   "saida": "12:25 PM on Sun, Feb 14"
+  },
+  "NVT-CNF-2027-02-15": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 333.0,
+   "quando": "2026-10-27T10:33:36.023238+00:00",
+   "saida": "5:40 AM on Mon, Feb 15"
+  },
+  "NVT-CNF-2027-02-21": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 333.0,
+   "quando": "2026-10-27T10:35:54.150523+00:00",
+   "saida": "10:55 AM on Sun, Feb 21"
+  },
+  "NVT-CNF-2027-02-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 333.0,
+   "quando": "2026-10-27T10:36:39.709813+00:00",
+   "saida": ""
+  },
+  "NVT-CNF-2027-02-28": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 333.0,
+   "quando": "2026-10-27T10:39:03.483793+00:00",
+   "saida": "10:55 AM on Sun, Feb 28"
+  },
+  "NVT-CNF-2027-03-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 333.0,
+   "quando": "2026-10-27T10:39:39.746604+00:00",
+   "saida": ""
+  },
+  "NVT-CNF-2027-03-07": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:42:05.921132+00:00",
+   "saida": "10:55 AM on Sun, Mar 7"
+  },
+  "NVT-CNF-2027-03-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 333.0,
+   "quando": "2026-10-27T10:42:47.530374+00:00",
+   "saida": "9:05 AM on Mon, Mar 8"
+  },
+  "NVT-CNF-2027-03-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 333.0,
+   "quando": "2026-10-27T10:45:12.622539+00:00",
+   "saida": ""
+  },
+  "NVT-CNF-2027-03-15": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 333.0,
+   "quando": "2026-10-27T10:45:56.012761+00:00",
+   "saida": "5:15 AM on Mon, Mar 15"
+  },
+  "OPS-CNF-2026-12-24": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 1240.0,
+   "quando": "2026-10-27T10:15:00.021541+00:00",
+   "saida": ""
+  },
+  "OPS-CNF-2026-12-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 1136.0,
+   "quando": "2026-10-27T10:15:04.565795+00:00",
+   "saida": "4:05 PM on Fri, Dec 25"
+  },
+  "OPS-CNF-2026-12-26": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 1055.0,
+   "quando": "2026-10-27T10:15:08.968703+00:00",
+   "saida": "4:05 PM on Sat, Dec 26"
+  },
+  "PMW-CNF-2027-01-10": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 3,
+   "preco": 699.0,
+   "quando": "2026-10-27T10:17:33.518492+00:00",
+   "saida": "5:20 AM on Sun, Jan 10"
+  },
+  "PMW-CNF-2027-01-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 660.0,
+   "quando": "2026-10-27T10:18:15.031060+00:00",
+   "saida": "3:15 PM on Mon, Jan 11"
+  },
+  "PMW-CNF-2027-01-17": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 640.0,
+   "quando": "2026-10-27T10:20:35.619003+00:00",
+   "saida": "3:15 PM on Sun, Jan 17"
+  },
+  "PMW-CNF-2027-01-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 581.0,
+   "quando": "2026-10-27T10:21:17.388082+00:00",
+   "saida": "3:15 PM on Mon, Jan 18"
+  },
+  "PMW-CNF-2027-01-24": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 581.0,
+   "quando": "2026-10-27T10:23:45.296717+00:00",
+   "saida": "3:15 PM on Sun, Jan 24"
+  },
+  "PMW-CNF-2027-01-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 581.0,
+   "quando": "2026-10-27T10:24:31.366272+00:00",
+   "saida": "3:15 PM on Mon, Jan 25"
+  },
+  "PMW-CNF-2027-01-31": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 422.0,
+   "quando": "2026-10-27T10:27:02.152594+00:00",
+   "saida": ""
+  },
+  "PMW-CNF-2027-02-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 640.0,
+   "quando": "2026-10-27T10:27:40.900326+00:00",
+   "saida": ""
+  },
+  "PMW-CNF-2027-02-09": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 422.0,
+   "quando": "2026-10-27T10:30:09.620999+00:00",
+   "saida": "5:00 AM on Tue, Feb 9"
+  },
+  "PMW-CNF-2027-02-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 640.0,
+   "quando": "2026-10-27T10:30:51.724202+00:00",
+   "saida": ""
+  },
+  "PMW-CNF-2027-02-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 702.0,
+   "quando": "2026-10-27T10:33:05.028024+00:00",
+   "saida": "4:15 AM on Sun, Feb 14"
+  },
+  "PMW-CNF-2027-02-15": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 581.0,
+   "quando": "2026-10-27T10:33:45.342668+00:00",
+   "saida": "3:15 PM on Mon, Feb 15"
+  },
+  "PMW-CNF-2027-02-21": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 422.0,
+   "quando": "2026-10-27T10:36:05.036476+00:00",
+   "saida": "4:45 AM on Sun, Feb 21"
+  },
+  "PMW-CNF-2027-02-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 422.0,
+   "quando": "2026-10-27T10:36:49.381882+00:00",
+   "saida": ""
+  },
+  "PMW-CNF-2027-02-28": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 422.0,
+   "quando": "2026-10-27T10:39:13.563188+00:00",
+   "saida": "4:45 AM on Sun, Feb 28"
+  },
+  "PMW-CNF-2027-03-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 422.0,
+   "quando": "2026-10-27T10:39:51.831325+00:00",
+   "saida": ""
+  },
+  "PMW-CNF-2027-03-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 422.0,
+   "quando": "2026-10-27T10:42:15.899339+00:00",
+   "saida": ""
+  },
+  "PMW-CNF-2027-03-08": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 422.0,
+   "quando": "2026-10-27T10:42:58.801760+00:00",
+   "saida": "6:25 AM on Mon, Mar 8"
+  },
+  "PMW-CNF-2027-03-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 422.0,
+   "quando": "2026-10-27T10:45:22.087957+00:00",
+   "saida": "6:25 AM on Sun, Mar 14"
+  },
+  "PMW-CNF-2027-03-15": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 422.0,
+   "quando": "2026-10-27T10:46:07.123517+00:00",
+   "saida": "11:30 AM on Mon, Mar 15"
+  },
+  "SDU-CNF-2027-01-10": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 528.0,
+   "quando": "2026-10-27T10:17:10.753202+00:00",
+   "saida": "6:00 AM on Sun, Jan 10"
+  },
+  "SDU-CNF-2027-01-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 482.0,
+   "quando": "2026-10-27T10:17:51.055750+00:00",
+   "saida": ""
+  },
+  "SDU-CNF-2027-01-17": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 670.0,
+   "quando": "2026-10-27T10:20:09.211372+00:00",
+   "saida": ""
+  },
+  "SDU-CNF-2027-01-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:20:53.355183+00:00",
+   "saida": ""
+  },
+  "SDU-CNF-2027-01-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:24:03.554298+00:00",
+   "saida": "11:50 AM on Mon, Jan 25"
+  },
+  "SDU-CNF-2027-01-31": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 428.0,
+   "quando": "2026-10-27T10:26:35.858838+00:00",
+   "saida": "6:10 AM on Sun, Jan 31"
+  },
+  "SDU-CNF-2027-02-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 428.0,
+   "quando": "2026-10-27T10:27:20.601700+00:00",
+   "saida": ""
+  },
+  "SDU-CNF-2027-02-09": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:29:46.464387+00:00",
+   "saida": "6:00 AM on Tue, Feb 9"
+  },
+  "SDU-CNF-2027-02-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 843.0,
+   "quando": "2026-10-27T10:30:27.872410+00:00",
+   "saida": ""
+  },
+  "SDU-CNF-2027-02-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:32:38.327000+00:00",
+   "saida": "6:10 AM on Sun, Feb 14"
+  },
+  "SDU-CNF-2027-02-15": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:33:22.484988+00:00",
+   "saida": "6:10 AM on Mon, Feb 15"
+  },
+  "SDU-CNF-2027-02-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 428.0,
+   "quando": "2026-10-27T10:35:41.211834+00:00",
+   "saida": ""
+  },
+  "SDU-CNF-2027-02-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:36:24.167732+00:00",
+   "saida": ""
+  },
+  "SDU-CNF-2027-02-28": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 428.0,
+   "quando": "2026-10-27T10:38:49.752592+00:00",
+   "saida": "12:10 PM on Sun, Feb 28"
+  },
+  "SDU-CNF-2027-03-01": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 428.0,
+   "quando": "2026-10-27T10:39:28.396329+00:00",
+   "saida": "8:25 AM on Mon, Mar 1"
+  },
+  "SDU-CNF-2027-03-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 428.0,
+   "quando": "2026-10-27T10:41:51.575759+00:00",
+   "saida": ""
+  },
+  "SDU-CNF-2027-03-08": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 428.0,
+   "quando": "2026-10-27T10:42:32.602553+00:00",
+   "saida": ""
+  },
+  "SDU-CNF-2027-03-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 469.0,
+   "quando": "2026-10-27T10:44:59.486230+00:00",
+   "saida": "11:50 AM on Sun, Mar 14"
+  },
+  "SDU-CNF-2027-03-15": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 428.0,
+   "quando": "2026-10-27T10:45:40.591371+00:00",
+   "saida": "6:15 AM on Mon, Mar 15"
+  },
+  "SSA-CNF-2027-01-10": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 868.0,
+   "quando": "2026-10-27T10:17:25.739583+00:00",
+   "saida": "5:20 AM on Sun, Jan 10"
+  },
+  "SSA-CNF-2027-01-11": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 868.0,
+   "quando": "2026-10-27T10:18:06.990732+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-01-17": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 664.0,
+   "quando": "2026-10-27T10:20:26.473059+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-01-18": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 707.0,
+   "quando": "2026-10-27T10:21:09.691086+00:00",
+   "saida": "6:15 AM on Mon, Jan 18"
+  },
+  "SSA-CNF-2027-01-24": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 724.0,
+   "quando": "2026-10-27T10:23:37.866244+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-01-25": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 635.0,
+   "quando": "2026-10-27T10:24:24.010263+00:00",
+   "saida": "12:15 AM on Mon, Jan 25"
+  },
+  "SSA-CNF-2027-01-31": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 603.0,
+   "quando": "2026-10-27T10:26:52.776441+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-02-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 537.0,
+   "quando": "2026-10-27T10:27:34.766079+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-02-09": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 868.0,
+   "quando": "2026-10-27T10:30:02.541028+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-02-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 1312.0,
+   "quando": "2026-10-27T10:30:42.664528+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-02-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 828.0,
+   "quando": "2026-10-27T10:32:55.457454+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-02-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 759.0,
+   "quando": "2026-10-27T10:33:38.381689+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-02-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 480.0,
+   "quando": "2026-10-27T10:35:57.086739+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-02-22": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 489.0,
+   "quando": "2026-10-27T10:36:41.612597+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-02-28": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 480.0,
+   "quando": "2026-10-27T10:39:05.849537+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-03-01": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 480.0,
+   "quando": "2026-10-27T10:39:43.141136+00:00",
+   "saida": "8:30 PM on Mon, Mar 1"
+  },
+  "SSA-CNF-2027-03-07": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 480.0,
+   "quando": "2026-10-27T10:42:07.936032+00:00",
+   "saida": "3:55 AM on Sun, Mar 7"
+  },
+  "SSA-CNF-2027-03-08": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 480.0,
+   "quando": "2026-10-27T10:42:49.774286+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-03-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 480.0,
+   "quando": "2026-10-27T10:45:15.044309+00:00",
+   "saida": ""
+  },
+  "SSA-CNF-2027-03-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 480.0,
+   "quando": "2026-10-27T10:45:58.298443+00:00",
+   "saida": ""
+  },
+  "VCP-CNF-2027-01-10": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 363.0,
+   "quando": "2026-10-27T10:17:08.648253+00:00",
+   "saida": "11:30 AM on Sun, Jan 10"
+  },
+  "VCP-CNF-2027-01-11": {
+   "cia": "Azul",
+   "moeda_original": "BRL",
+   "paradas": 0,
+   "preco": 363.0,
+   "quando": "2026-10-27T10:17:47.385560+00:00",
+   "saida": "10:00 AM on Mon, Jan 11"
+  },
+  "VCP-CNF-2027-01-17": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 246.0,
+   "quando": "2026-10-27T10:20:04.563282+00:00",
+   "saida": "6:00 AM on Sun, Jan 17"
+  },
+  "VCP-CNF-2027-01-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 361.0,
+   "quando": "2026-10-27T10:20:49.158460+00:00",
+   "saida": ""
+  },
+  "VCP-CNF-2027-01-24": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 246.0,
+   "quando": "2026-10-27T10:23:15.243872+00:00",
+   "saida": "5:45 PM on Sun, Jan 24"
+  },
+  "VCP-CNF-2027-01-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 361.0,
+   "quando": "2026-10-27T10:23:58.022669+00:00",
+   "saida": "6:00 AM on Mon, Jan 25"
+  },
+  "VCP-CNF-2027-01-31": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 361.0,
+   "quando": "2026-10-27T10:26:30.819670+00:00",
+   "saida": "6:00 AM on Sun, Jan 31"
+  },
+  "VCP-CNF-2027-02-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 295.0,
+   "quando": "2026-10-27T10:27:15.167352+00:00",
+   "saida": ""
+  },
+  "VCP-CNF-2027-02-09": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 530.0,
+   "quando": "2026-10-27T10:29:39.824029+00:00",
+   "saida": "6:00 AM on Tue, Feb 9"
+  },
+  "VCP-CNF-2027-02-10": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 530.0,
+   "quando": "2026-10-27T10:30:21.807188+00:00",
+   "saida": "11:40 AM on Wed, Feb 10"
+  },
+  "VCP-CNF-2027-02-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 530.0,
+   "quando": "2026-10-27T10:32:30.949029+00:00",
+   "saida": ""
+  },
+  "VCP-CNF-2027-02-15": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 234.0,
+   "quando": "2026-10-27T10:33:17.838581+00:00",
+   "saida": "11:25 AM on Mon, Feb 15"
+  },
+  "VCP-CNF-2027-02-22": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 234.0,
+   "quando": "2026-10-27T10:36:18.514761+00:00",
+   "saida": "11:25 AM on Mon, Feb 22"
+  },
+  "VCP-CNF-2027-02-28": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 234.0,
+   "quando": "2026-10-27T10:38:44.236861+00:00",
+   "saida": "6:05 PM on Sun, Feb 28"
+  },
+  "VCP-CNF-2027-03-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 246.0,
+   "quando": "2026-10-27T10:39:23.641222+00:00",
+   "saida": ""
+  },
+  "VCP-CNF-2027-03-07": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 274.0,
+   "quando": "2026-10-27T10:41:46.308966+00:00",
+   "saida": ""
+  },
+  "VCP-CNF-2027-03-08": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 246.0,
+   "quando": "2026-10-27T10:42:28.226063+00:00",
+   "saida": "5:45 PM on Mon, Mar 8"
+  },
+  "VCP-CNF-2027-03-14": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 234.0,
+   "quando": "2026-10-27T10:44:52.946084+00:00",
+   "saida": "9:35 AM on Sun, Mar 14"
+  },
+  "VCP-CNF-2027-03-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 234.0,
+   "quando": "2026-10-27T10:45:34.268615+00:00",
+   "saida": ""
+  },
+  "VIX-CNF-2027-01-10": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 549.0,
+   "quando": "2026-10-27T10:17:12.747945+00:00",
+   "saida": ""
+  },
+  "VIX-CNF-2027-01-11": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 549.0,
+   "quando": "2026-10-27T10:17:53.224529+00:00",
+   "saida": "4:35 PM on Mon, Jan 11"
+  },
+  "VIX-CNF-2027-01-17": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 485.0,
+   "quando": "2026-10-27T10:20:12.210580+00:00",
+   "saida": "7:40 PM on Sun, Jan 17"
+  },
+  "VIX-CNF-2027-01-18": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 485.0,
+   "quando": "2026-10-27T10:20:55.471021+00:00",
+   "saida": ""
+  },
+  "VIX-CNF-2027-01-24": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 485.0,
+   "quando": "2026-10-27T10:23:24.419552+00:00",
+   "saida": "7:40 PM on Sun, Jan 24"
+  },
+  "VIX-CNF-2027-01-25": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 444.0,
+   "quando": "2026-10-27T10:24:07.602975+00:00",
+   "saida": "9:15 AM on Mon, Jan 25"
+  },
+  "VIX-CNF-2027-01-31": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 550.0,
+   "quando": "2026-10-27T10:26:38.812872+00:00",
+   "saida": ""
+  },
+  "VIX-CNF-2027-02-09": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 487.0,
+   "quando": "2026-10-27T10:29:49.374174+00:00",
+   "saida": "5:15 AM on Tue, Feb 9"
+  },
+  "VIX-CNF-2027-02-10": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 487.0,
+   "quando": "2026-10-27T10:30:30.972007+00:00",
+   "saida": "5:55 AM on Wed, Feb 10"
+  },
+  "VIX-CNF-2027-02-14": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 487.0,
+   "quando": "2026-10-27T10:32:41.615545+00:00",
+   "saida": "11:10 AM on Sun, Feb 14"
+  },
+  "VIX-CNF-2027-02-15": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 487.0,
+   "quando": "2026-10-27T10:33:24.629929+00:00",
+   "saida": "11:10 AM on Mon, Feb 15"
+  },
+  "VIX-CNF-2027-02-21": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 444.0,
+   "quando": "2026-10-27T10:35:43.873591+00:00",
+   "saida": ""
+  },
+  "VIX-CNF-2027-02-22": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 444.0,
+   "quando": "2026-10-27T10:36:28.069858+00:00",
+   "saida": "9:40 AM on Mon, Feb 22"
+  },
+  "VIX-CNF-2027-02-28": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 444.0,
+   "quando": "2026-10-27T10:38:53.476600+00:00",
+   "saida": "12:25 PM on Sun, Feb 28"
+  },
+  "VIX-CNF-2027-03-01": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 444.0,
+   "quando": "2026-10-27T10:39:30.098688+00:00",
+   "saida": ""
+  },
+  "VIX-CNF-2027-03-07": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 444.0,
+   "quando": "2026-10-27T10:41:54.203880+00:00",
+   "saida": "6:10 AM on Sun, Mar 7"
+  },
+  "VIX-CNF-2027-03-08": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 444.0,
+   "quando": "2026-10-27T10:42:36.033248+00:00",
+   "saida": "12:05 PM on Mon, Mar 8"
+  },
+  "VIX-CNF-2027-03-14": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 487.0,
+   "quando": "2026-10-27T10:45:02.023713+00:00",
+   "saida": ""
+  },
+  "VIX-CNF-2027-03-15": {
+   "cia": "",
+   "moeda_original": "BRL",
+   "paradas": null,
+   "preco": 444.0,
+   "quando": "2026-10-27T10:45:42.706866+00:00",
+   "saida": ""
   }
  },
- "melhor_rota": {}
+ "melhor_rota": {
+  "Confins → Sinop/Cuiabá (dezembro)": 1859.0,
+  "Cuiabá ↔ Confins (saindo de Cuiabá)": 1019.0
+ }
 }
