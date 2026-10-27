@@ -10,6 +10,10 @@ Roda sozinho todo dia no GitHub (de graça) e avisa no Telegram quando:
   - Cuiabá ↔ Confins (saindo de Cuiabá): 5 a 10 dias, a partir de janeiro de 2027
   - Confins → Sinop ou Cuiabá: ida 18, 19 ou 20/12/2026 e volta 24, 25 ou 26/12/2026
 
+- **Confins → Cuiabá e Cuiabá → Confins (só ida, abril a agosto/2027)**: avisa toda data com trecho
+  até **R$ 400** e mostra o menor preço de cada mês. Para uma busca rápida só desses trechos:
+  **Run workflow → trechos**.
+
 Toda **segunda-feira** chega um resumo completo, mesmo sem novidade.
 
 Os preços vêm do Google Flights, que reúne Azul, GOL, LATAM e agências. Sempre confira o valor final

@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       modo:
-        description: "teste = poucas buscas, confere se está tudo certo; resumo = manda o resumo completo"
+        description: "teste = confere se está tudo certo; resumo = manda o resumo completo; trechos = busca rápida só Confins/Cuiabá"
         type: choice
-        options: [teste, normal, resumo]
+        options: [teste, normal, resumo, trechos]
         default: teste
 
 permissions:

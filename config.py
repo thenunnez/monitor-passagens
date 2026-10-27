@@ -58,6 +58,17 @@ IDA_E_VOLTA = [
      "voltas": [date(2026, 12, 24), date(2026, 12, 25), date(2026, 12, 26)],
      "mesmo_aeroporto": True, "atualizar_dias": 1},
 ]
+# ---------------------------------------------------------------
+# Trechos só de ida (cada sentido separado): avisa datas abaixo do limite
+# ---------------------------------------------------------------
+TRECHOS = [
+    {"nome": "Confins → Cuiabá", "origem": "CNF", "destino": "CGB",
+     "de": date(2027, 4, 1), "ate": date(2027, 8, 31), "limite": 400.00, "atualizar_dias": 2},
+    {"nome": "Cuiabá → Confins", "origem": "CGB", "destino": "CNF",
+     "de": date(2027, 4, 1), "ate": date(2027, 8, 31), "limite": 400.00, "atualizar_dias": 2},
+]
+TOP_TRECHO = 8                 # quantas datas mais baratas mostrar por trecho
+
 TOP_IDA_E_VOLTA = 3            # quantas combinações mostrar por rota
 
 # ---------------------------------------------------------------

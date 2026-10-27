@@ -59,6 +59,9 @@ def salvar_estado(est):
 
 # ------------------------------------------------------------------ consultas
 def freq(cat):
+    if cat.startswith("tr:"):
+        t = next((t for t in C.TRECHOS if t["nome"] == cat[3:]), None)
+        return (t or {}).get("atualizar_dias", 2)
     if cat.startswith("rt:"):
         r = next((r for r in C.IDA_E_VOLTA if r["nome"] == cat[3:]), None)
         return (r or {}).get("atualizar_dias", 5)
@@ -115,6 +118,11 @@ def montar_consultas():
             for o in r["origem"]:
                 for a in r["destino"]:
                     consultas.append((a, o, v.isoformat(), cat))
+    for t in C.TRECHOS:
+        d = max(t["de"], h + timedelta(days=1))
+        while d <= min(t["ate"], h + timedelta(days=C.HORIZONTE_DIAS)):
+            consultas.append((t["origem"], t["destino"], d.isoformat(), "tr:" + t["nome"]))
+            d += timedelta(days=1)
     # remove duplicadas mantendo a categoria atualizada com mais frequência
     unicas = {}
     for o, d, data, cat in consultas:
@@ -381,6 +389,60 @@ def bloco_ida_volta(res, so=None, prefixo=""):
     return msgs
 
 
+def analisar_trechos(cotacoes):
+    res = {}
+    h = hoje()
+    for t in C.TRECHOS:
+        datas, total = [], 0
+        d = max(t["de"], h + timedelta(days=1))
+        while d <= t["ate"]:
+            total += 1
+            p = preco(cotacoes, t["origem"], t["destino"], d.isoformat())
+            if p:
+                datas.append((d, p))
+            d += timedelta(days=1)
+        datas.sort(key=lambda x: x[1]["preco"])
+        res[t["nome"]] = {"t": t, "datas": datas, "cobertura": (len([1 for _ in datas]) / total) if total else 0,
+                          "abaixo": [x for x in datas if x[1]["preco"] <= t["limite"]]}
+    return res
+
+
+def bloco_trechos(res, so=None, novas=None):
+    msgs = []
+    for nome, r in res.items():
+        if so is not None and nome not in so:
+            continue
+        t = r["t"]
+        cab = (f"🎯 <b>{html.escape(nome)}</b> — só ida, {t['de'].day:02d}/{t['de'].month:02d} a "
+               f"{t['ate'].day:02d}/{t['ate'].month:02d}"
+               + (f" <i>(datas pesquisadas: {r['cobertura']:.0%})</i>" if r["cobertura"] < 0.99 else ""))
+        if not r["datas"]:
+            msgs.append(cab + "\nainda sem dados")
+            continue
+        n_abaixo = len(r["abaixo"])
+        meses = {}
+        for d, p in r["datas"]:
+            k = (d.year, d.month)
+            if k not in meses or p["preco"] < meses[k][1]["preco"]:
+                meses[k] = (d, p)
+        nomes = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
+        cab += "\n📊 Menor por mês: " + " · ".join(
+            f"{nomes[k[1] - 1]} {fmt_reais(v[1]['preco'])} ({v[0].day:02d})" for k, v in sorted(meses.items()))
+        linhas = [cab, (f"✅ <b>{n_abaixo} data(s) até {fmt_reais(t['limite'])}</b>" if n_abaixo
+                        else f"Nenhuma data até {fmt_reais(t['limite'])} ainda. Menores preços:")]
+        mostrar = r["abaixo"] if n_abaixo else r["datas"]
+        mostrar = sorted(mostrar[:C.TOP_TRECHO], key=lambda x: x[0])
+        for d, p in mostrar:
+            nova = " 🆕" if novas and (nome, d.isoformat()) in novas else ""
+            linhas.append(f"\n🗓️ {fmt_data(d)}/{d.year % 100:02d} · <b>{fmt_reais(p['preco'])}</b> · "
+                          f"{info_voo((p, t['origem'], t['destino']))}{nova}")
+            linhas.append(f"🔗 {links_html(t['origem'], t['destino'], d)}")
+        if n_abaixo > C.TOP_TRECHO:
+            linhas.append(f"\n<i>(+{n_abaixo - C.TOP_TRECHO} outras datas até o limite)</i>")
+        msgs.append("\n".join(linhas))
+    return msgs
+
+
 # ------------------------------------------------------------------ main
 def main():
     modo = (os.environ.get("MODO") or "normal").strip().lower()
@@ -402,6 +464,9 @@ def main():
         nac = [q for q in consultas if q[3].startswith("nacional")][:2]
         intl = sorted([q for q in consultas if q[3].startswith("rt:")], key=lambda q: q[2])[:2]
         pendentes, faltando = nac + intl, len(consultas)
+    elif modo == "trechos":  # rodada rápida: só os trechos de ida
+        so_tr = [q for q in consultas if q[3].startswith("tr:")]
+        pendentes, faltando = escolher_pendentes(so_tr, cot, C.BUSCAS_POR_EXECUCAO)
     else:
         pendentes, faltando = escolher_pendentes(consultas, cot, C.BUSCAS_POR_EXECUCAO)
     print(f"{len(consultas)} consultas no total; {faltando} precisando atualizar; fazendo {len(pendentes)} agora")
@@ -414,7 +479,7 @@ def main():
     rotas = analisar_ida_volta(cot)
 
     import copy
-    backup = copy.deepcopy({k: est.get(k) for k in ("alertas", "melhor_rota", "melhor_milhas")})
+    backup = copy.deepcopy({k: est.get(k) for k in ("alertas", "melhor_rota", "melhor_milhas", "alertas_trecho")})
     novos_nac = []
     for a in nacional:
         ant = alertas.get(a["id"])
@@ -430,6 +495,20 @@ def main():
             if ant is None or t <= ant - C.QUEDA_MINIMA_REALERTA:
                 novidades.add(nome)
             melhor_rota[nome] = t if ant is None else min(t, ant)
+    salvar_estado(est)
+
+    trechos_res = analisar_trechos(cot)
+    vistos_tr = est.setdefault("alertas_trecho", {})
+    novas_tr = set()
+    for nome, r in trechos_res.items():
+        for d, p in r["abaixo"]:
+            k = f"{nome}|{d.isoformat()}"
+            ant = vistos_tr.get(k)
+            if ant is None or p["preco"] <= ant - C.QUEDA_MINIMA_REALERTA:
+                novas_tr.add((nome, d.isoformat()))
+            vistos_tr[k] = p["preco"] if ant is None else min(ant, p["preco"])
+    for k in [k for k in vistos_tr if k.split("|")[-1] < h]:
+        del vistos_tr[k]
     salvar_estado(est)
 
     resumo = modo in ("teste", "resumo") or datetime.now(BRT).weekday() == 0  # segunda = resumo semanal
@@ -471,7 +550,15 @@ def main():
             partes += bloco_nacional(novos_nac)
         if resumo:
             partes += bloco_por_estado(analisar_nacional(janelas, cot, todos=True))
-        if resumo:
+        trechos_com_novas = {n for n, _ in novas_tr}
+        if resumo or modo == "trechos":
+            partes = bloco_trechos(trechos_res, novas=novas_tr) + partes
+        elif trechos_com_novas:
+            partes = [("🔔 <b>Nova data barata!</b>\n" + m) for m in
+                      bloco_trechos(trechos_res, so=trechos_com_novas, novas=novas_tr)] + partes
+        if modo == "trechos":
+            pass
+        elif resumo:
             partes += bloco_ida_volta(rotas)
         elif novidades:
             partes += bloco_ida_volta(rotas, so=novidades, prefixo="🔔 <b>Novo menor preço!</b>\n")
