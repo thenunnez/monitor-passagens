@@ -1,6 +1,8 @@
 """Envio de mensagens pelo Telegram."""
+import html
 import json
 import os
+import re
 import urllib.parse
 import urllib.request
 
@@ -12,12 +14,17 @@ def enviar(texto: str):
         print("---- (Telegram não configurado; mensagem abaixo) ----")
         print(texto)
         return False
-    partes, atual = [], ""
+    def visivel(t):  # o limite do Telegram (4096) conta o texto sem as tags
+        return len(html.unescape(re.sub(r"<[^>]+>", "", t)))
+
+    partes, atual, tam = [], "", 0
     for linha in texto.split("\n"):
-        if len(atual) + len(linha) + 1 > 3800:
+        v = visivel(linha) + 1
+        if atual and (tam + v > 3500 or len(atual) + len(linha) > 60000):
             partes.append(atual)
-            atual = ""
+            atual, tam = "", 0
         atual += linha + "\n"
+        tam += v
     if atual.strip():
         partes.append(atual)
     for p in partes:

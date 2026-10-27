@@ -42,7 +42,8 @@ def feriados(ano: int, extras=()) -> dict:
     return f
 
 
-def janelas_fim_de_semana(inicio: date, fim: date, extras=(), ponte=True, volta_dia_seguinte=True):
+def janelas_fim_de_semana(inicio: date, fim: date, extras=(), ponte=True, volta_dia_seguinte=True,
+                          ida_dia_anterior=False):
     """Retorna lista de janelas: {ida, voltas:[...], rotulo}.
 
     Um bloco = dias seguidos de folga (sáb, dom, feriados e, se ponte=True,
@@ -78,7 +79,9 @@ def janelas_fim_de_semana(inicio: date, fim: date, extras=(), ponte=True, volta_
                 nomes = sorted({fer[x] for x in fer if ini <= x <= ultimo})
                 rotulo = " + ".join(nomes) if nomes else "Fim de semana"
                 voltas = [ultimo] + ([ultimo + timedelta(days=1)] if volta_dia_seguinte else [])
-                janelas.append({"ida": ida, "voltas": voltas, "rotulo": rotulo,
+                idas = [ida] + ([ida - timedelta(days=1)] if ida_dia_anterior else [])
+                idas = [x for x in idas if x >= inicio]
+                janelas.append({"ida": ida, "idas": idas, "voltas": voltas, "rotulo": rotulo,
                                 "dias_folga": (ultimo - ini).days + 1})
         d += timedelta(days=1)
     return janelas

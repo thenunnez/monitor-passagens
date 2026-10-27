@@ -20,7 +20,7 @@ import config as C
 from datas import janelas_fim_de_semana
 import ignav
 import milhas
-from fetcher import SemVoos, link_google, link_kayak, link_skyscanner, menor_preco
+from fetcher import SemVoos, link_google, link_kayak, link_maxmilhas, link_skyscanner, menor_preco
 from notificar import enviar
 
 ESTADO = Path(__file__).parent / "data" / "estado.json"
@@ -93,13 +93,14 @@ def montar_consultas():
     janelas = janelas_fim_de_semana(
         inicio_nac, h + timedelta(days=C.HORIZONTE_DIAS),
         extras=C.FERIADOS_EXTRAS, ponte=C.CONSIDERAR_PONTE,
-        volta_dia_seguinte=C.VOLTA_DIA_SEGUINTE)
+        volta_dia_seguinte=C.VOLTA_DIA_SEGUINTE, ida_dia_anterior=C.IDA_DIA_ANTERIOR)
     for j in janelas:
         perto = (j["ida"] - h).days <= C.DIAS_NACIONAL_PROXIMO
         cat = "nacional_proximo" if perto else "nacional_longe"
         for aeros in C.NACIONAL.values():
             for a in aeros:
-                consultas.append((C.ORIGEM, a, j["ida"].isoformat(), cat))
+                for i in j["idas"]:
+                    consultas.append((C.ORIGEM, a, i.isoformat(), cat))
                 for v in j["voltas"]:
                     consultas.append((a, C.ORIGEM, v.isoformat(), cat))
     for r in C.IDA_E_VOLTA:
@@ -172,11 +173,12 @@ def preco(cotacoes, o, d, data):
     return c if c and c.get("preco") is not None else None
 
 
-def analisar_nacional(janelas, cotacoes):
+def analisar_nacional(janelas, cotacoes, todos=False):
+    """todos=True devolve todas as janelas com preço (para o ranking por estado)."""
     achados = []
     for j in janelas:
         for cidade, aeros in C.NACIONAL.items():
-            idas = [(preco(cotacoes, C.ORIGEM, a, j["ida"].isoformat()), a, j["ida"]) for a in aeros]
+            idas = [(preco(cotacoes, C.ORIGEM, a, i.isoformat()), a, i) for a in aeros for i in j["idas"]]
             idas = [x for x in idas if x[0]]
             voltas = [(preco(cotacoes, a, C.ORIGEM, v.isoformat()), a, v) for a in aeros for v in j["voltas"]]
             voltas = [x for x in voltas if x[0]]
@@ -184,7 +186,7 @@ def analisar_nacional(janelas, cotacoes):
                 continue
             bi = min(idas, key=lambda x: x[0]["preco"])
             bv = min(voltas, key=lambda x: x[0]["preco"])
-            if bi[0]["preco"] <= C.LIMITE_TRECHO and bv[0]["preco"] <= C.LIMITE_TRECHO:
+            if todos or (bi[0]["preco"] <= C.LIMITE_TRECHO and bv[0]["preco"] <= C.LIMITE_TRECHO):
                 achados.append({
                     "id": f"N|{cidade}|{j['ida'].isoformat()}",
                     "cidade": cidade, "rotulo": j["rotulo"],
@@ -262,7 +264,8 @@ def links_html(o, d, data):
                       f" ({preco})</a>")
     partes.append(f"<a href=\"{link_google(o, d, data)}\">Google</a>")
     partes.append(f"<a href=\"{link_kayak(o, d, data)}\">Kayak</a>")
-    partes.append(f"<a href=\"{link_skyscanner(o, d, data)}\">Skyscanner</a>")
+    partes.append(f"<a href=\"{link_skyscanner(o, d, data)}\">Sky</a>")
+    partes.append(f"<a href=\"{link_maxmilhas(o, d, data)}\">MaxMilhas</a>")
     return " · ".join(partes)
 
 
@@ -311,6 +314,30 @@ def bloco_nacional(achados):
                       f"(total {fmt_reais(a['total'])})")
         linhas.append(linha_trecho("Ida  ", ci, C.ORIGEM, ai, di))
         linhas.append(linha_trecho("Volta", cv, av, C.ORIGEM, dv))
+    return "\n".join(linhas)
+
+
+def bloco_por_estado(todas):
+    linhas = ["🗺️ <b>Mais baratos por estado (ida e volta somadas, fins de semana/feriados 2027)</b>"]
+    for estado in C.NACIONAL:
+        l = sorted([a for a in todas if a["cidade"] == estado], key=lambda x: x["total"])
+        vistos, top = set(), []
+        for a in l:
+            if a["id"] in vistos:
+                continue
+            vistos.add(a["id"])
+            top.append(a)
+            if len(top) >= C.TOP_POR_ESTADO:
+                break
+        if not top:
+            linhas.append(f"\n📍 <b>{estado}</b>: ainda sem dados")
+            continue
+        linhas.append(f"\n📍 <b>{estado}</b>")
+        for a in top:
+            (ci, ai, di), (cv, av, dv) = a["ida"], a["volta"]
+            linhas.append(f"  • <b>{fmt_reais(a['total'])}</b> — {html.escape(a['rotulo'])}")
+            linhas.append(linha_trecho("Ida  ", ci, C.ORIGEM, ai, di))
+            linhas.append(linha_trecho("Volta", cv, av, C.ORIGEM, dv))
     return "\n".join(linhas)
 
 
@@ -391,9 +418,7 @@ def main():
 
     # trechos que vão aparecer na mensagem -> link direto de compra
     trechos = []
-    nac_msg = novos_nac or (nacional if resumo else [])
-    for a in sorted(nac_msg, key=lambda x: x["total"])[:15]:
-        trechos += [(C.ORIGEM, a["ida"][1], a["ida"][2]), (a["volta"][1], C.ORIGEM, a["volta"][2])]
+    # (nacionais ficam de fora da Ignav para não gastar a cota grátis)
     for nome, r in rotas.items():
         if resumo or nome in novidades:
             for c in r["top"]:
@@ -426,10 +451,8 @@ def main():
     else:
         if novos_nac:
             partes.append(bloco_nacional(novos_nac))
-        elif resumo and nacional:
-            partes.append(bloco_nacional(nacional))
-        elif resumo:
-            partes.append(f"🏖️ Nenhum fim de semana com os 2 trechos até {fmt_reais(C.LIMITE_TRECHO)} por enquanto.")
+        if resumo:
+            partes.append(bloco_por_estado(analisar_nacional(janelas, cot, todos=True)))
         if resumo:
             partes.append(bloco_ida_volta(rotas))
         elif novidades:

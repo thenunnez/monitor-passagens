@@ -2,8 +2,9 @@
 
 Roda sozinho todo dia no GitHub (de graça) e avisa no Telegram quando:
 
-- **RJ, SP ou Vitória**: algum fim de semana ou feriado tem **ida e volta, cada trecho até R$ 240**
-  (ida na sexta ou na véspera do feriado; volta no último dia de folga ou no dia seguinte), a partir de jan/2027.
+- **SP, RJ, ES, PR, SC, BA, MS e TO**: algum fim de semana ou feriado de 2027 tem **ida e volta, cada trecho até R$ 240**
+  (ida na véspera da folga ou 1 dia antes; volta no último dia de folga ou 1 dia depois).
+  No resumo de segunda vem também o ranking das datas mais baratas de cada estado.
 - **Ida e volta** (avisa quando aparece um **novo menor preço**, com o top 5 de datas):
   - Buenos Aires e Santiago: 5 a 10 dias, ida entre abril e setembro de 2027
   - Cuiabá ↔ Confins (saindo de Cuiabá): 5 a 10 dias, a partir de janeiro de 2027
@@ -34,10 +35,10 @@ No repositório: **Settings → Secrets and variables → Actions → New reposi
 mensagem de teste no Telegram com 4 preços.
 
 Pronto. A partir daí roda todo dia por volta das 6h40. Nos primeiros ~4 dias ele vai preenchendo
-todas as datas (são ~2.300 buscas, feitas aos poucos para não ser bloqueado).
+todas as datas (são ~3.700 buscas, feitas aos poucos para não ser bloqueado).
 
 ## Links de compra
-Cada preço vem com links já preenchidos (rota + data) para **Google Flights, Kayak e Skyscanner**.
+Cada preço vem com links já preenchidos (rota + data) para **Google Flights, Kayak, Skyscanner e MaxMilhas**.
 
 **Opcional – link direto de compra (🛒):** crie uma conta em ignav.com, copie a API key e crie o
 secret `IGNAV_API_KEY` no GitHub. O monitor passa a mostrar o preço em reais do mercado brasileiro e um

@@ -7,15 +7,22 @@ ORIGEM = "CNF"  # Confins
 # Viagens nacionais de fim de semana / feriado
 # ---------------------------------------------------------------
 NACIONAL = {
-    # nome da cidade -> aeroportos considerados
-    "Rio de Janeiro": ["GIG", "SDU"],
+    # estado -> aeroportos considerados (mostra sempre o mais barato do estado)
     "São Paulo": ["GRU", "CGH", "VCP"],
-    "Vitória": ["VIX"],
+    "Rio de Janeiro": ["GIG", "SDU"],
+    "Espírito Santo": ["VIX"],
+    "Paraná": ["CWB", "IGU"],                # Curitiba, Foz do Iguaçu
+    "Santa Catarina": ["FLN", "NVT"],        # Florianópolis, Navegantes
+    "Bahia": ["SSA", "BPS"],                 # Salvador, Porto Seguro
+    "Mato Grosso do Sul": ["CGR"],           # Campo Grande
+    "Tocantins": ["PMW"],                    # Palmas
 }
 LIMITE_TRECHO = 240.00        # R$ por trecho (ida e volta, cada um)
 NACIONAL_A_PARTIR_DE = date(2027, 1, 1)  # só fins de semana a partir desta data
 HORIZONTE_DIAS = 330          # até quantos dias à frente olhar (Google vai até ~11 meses)
-VOLTA_DIA_SEGUINTE = True     # também testa voltar no dia seguinte (ex.: segunda cedo)
+VOLTA_DIA_SEGUINTE = True     # também testa voltar 1 dia depois do fim da folga
+IDA_DIA_ANTERIOR = True       # também testa sair 1 dia antes (ex.: quinta em vez de sexta)
+TOP_POR_ESTADO = 2            # no resumo de segunda: as N datas mais baratas de cada estado
 CONSIDERAR_PONTE = True       # feriado na quinta/terça: inclui a "ponte" (sexta/segunda)
 
 # Feriados extras além dos nacionais (ex.: municipais de BH). Formato date(AAAA, M, D)
@@ -36,30 +43,30 @@ IDA_E_VOLTA = [
     {"nome": "Argentina (Buenos Aires)", "emoji": "🇦🇷",
      "origem": ["CNF"], "destino": ["EZE", "AEP"],
      "ida_de": date(2027, 4, 1), "ida_ate": date(2027, 9, 30),
-     "dias_min": 5, "dias_max": 10, "mesmo_aeroporto": False, "atualizar_dias": 5},
+     "dias_min": 5, "dias_max": 10, "mesmo_aeroporto": False, "atualizar_dias": 6},
     {"nome": "Chile (Santiago)", "emoji": "🇨🇱",
      "origem": ["CNF"], "destino": ["SCL"],
      "ida_de": date(2027, 4, 1), "ida_ate": date(2027, 9, 30),
-     "dias_min": 5, "dias_max": 10, "mesmo_aeroporto": False, "atualizar_dias": 5},
+     "dias_min": 5, "dias_max": 10, "mesmo_aeroporto": False, "atualizar_dias": 6},
     {"nome": "Cuiabá ↔ Confins (saindo de Cuiabá)", "emoji": "🌾",
      "origem": ["CGB"], "destino": ["CNF"],
      "ida_de": date(2027, 1, 1), "ida_ate": None,
-     "dias_min": 5, "dias_max": 10, "mesmo_aeroporto": False, "atualizar_dias": 5},
+     "dias_min": 5, "dias_max": 10, "mesmo_aeroporto": False, "atualizar_dias": 6},
     {"nome": "Confins → Sinop/Cuiabá (dezembro)", "emoji": "🎄",
      "origem": ["CNF"], "destino": ["OPS", "CGB"],
      "idas": [date(2026, 12, 18), date(2026, 12, 19), date(2026, 12, 20)],
      "voltas": [date(2026, 12, 24), date(2026, 12, 25), date(2026, 12, 26)],
      "mesmo_aeroporto": True, "atualizar_dias": 1},
 ]
-TOP_IDA_E_VOLTA = 5            # quantas combinações mostrar por rota
+TOP_IDA_E_VOLTA = 3            # quantas combinações mostrar por rota
 
 # ---------------------------------------------------------------
 # Ritmo das buscas
 # ---------------------------------------------------------------
-BUSCAS_POR_EXECUCAO = 600      # limite de consultas por rodada (evita bloqueio)
+BUSCAS_POR_EXECUCAO = 750      # limite de consultas por rodada (evita bloqueio)
 ATUALIZAR_A_CADA_DIAS = {
     "nacional_proximo": 1,     # fins de semana nos próximos 45 dias
-    "nacional_longe": 3,
+    "nacional_longe": 5,
 }
 DIAS_NACIONAL_PROXIMO = 45
 PAUSA_ENTRE_BUSCAS = (1.0, 2.5)  # segundos (aleatório)
