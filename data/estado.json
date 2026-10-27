@@ -1,37 +1,79 @@
 {
  "alertas": {},
+ "compra": {
+  "CNF-CGB-2026-12-18": {
+   "cia": "LATAM",
+   "loja": "LATAM",
+   "moeda": "BRL",
+   "preco": 876.0,
+   "quando": "2026-10-27T04:13:21.686405+00:00",
+   "saida": "06:20",
+   "tipo": "airline",
+   "url": "https://www.latamairlines.com/br/pt/oferta-voos?dataFlight=%7B%22tripTypeSelected%22:%7B%22value%22:%22OW%22%7D,%22cabinSelected%22:%7B%22label%22:%22Economy%22,%22value%22:%22Economy%22%7D,%22passengerSelected%22:%7B%22adultQuantity%22:1,%22childrenQuantity%22:0,%22infantQuantity%22:0%7D,%22originSelected%22:%7B%22id%22:%22CNF_BR_AIRPORT%22,%22iata%22:%22CNF%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CNF%22%7D,%22destinationSelected%22:%7B%22id%22:%22CGB_BR_AIRPORT%22,%22iata%22:%22CGB%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CGB%22%7D,%22dateGoSelected%22:%222026-12-18%22,%22dateReturnSelected%22:null%7D&sort=PRICE,asc&utm_medium=metasearch&utm_source=gfs&utm_campaign=br_latam_gfs_metasearch_perf_aon&utm_content=br_latam_perf_gfs_aon_nn_CNF_CGB_domestic_conversion_core_desktop&gclid=AAcRjHLhZ6rAUE_Tj3h9U1-bVXkzZp_MihPjDkwgoPDspNtadKCXRFKa1o2xR0rG6KgRUqyo5i031SfIDdQsr4PNTbaytJq13X-75Lk24jmhRP7S3U0&gclsrc=gf"
+  },
+  "CNF-GIG-2027-01-08": {
+   "cia": "Gol",
+   "loja": "Gol",
+   "moeda": "BRL",
+   "preco": 425.0,
+   "quando": "2026-10-27T04:13:04.202436+00:00",
+   "saida": "15:05",
+   "tipo": "airline",
+   "url": "https://b2c.voegol.com.br/compra/busca-parceiros?pv=BR&tipo=DF&de=CNF&para=GIG&ida=08-01-2027&ADT=1&CHD=0&INF=0&tarifaSelecionada=&vooSelecionado1=G32075%7C42405BRL&utm_source=google&utm_medium=google-flightsearch&utm_campaign=national&gclid=AAcRjHJ7ChAsl6Rzv8dF8slQ-Yqu8wdjHlQZSovc7PM6bqC5MXM3O1zylIH8jPO01h4bh4FLUouQNAS8j2CI6Gt6CvKm81Cs-ofM-ckhLAq_igTmztE&gclsrc=gf"
+  },
+  "CNF-OPS-2026-12-18": {
+   "cia": "LATAM",
+   "loja": "LATAM",
+   "moeda": "BRL",
+   "preco": 1226.0,
+   "quando": "2026-10-27T04:13:13.444006+00:00",
+   "saida": "04:55",
+   "tipo": "airline",
+   "url": "https://www.latamairlines.com/br/pt/oferta-voos?dataFlight=%7B%22tripTypeSelected%22:%7B%22value%22:%22OW%22%7D,%22cabinSelected%22:%7B%22label%22:%22Economy%22,%22value%22:%22Economy%22%7D,%22passengerSelected%22:%7B%22adultQuantity%22:1,%22childrenQuantity%22:0,%22infantQuantity%22:0%7D,%22originSelected%22:%7B%22id%22:%22CNF_BR_AIRPORT%22,%22iata%22:%22CNF%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CNF%22%7D,%22destinationSelected%22:%7B%22id%22:%22OPS_BR_AIRPORT%22,%22iata%22:%22OPS%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22OPS%22%7D,%22dateGoSelected%22:%222026-12-18%22,%22dateReturnSelected%22:null%7D&sort=PRICE,asc&utm_medium=metasearch&utm_source=gfs&utm_campaign=br_latam_gfs_metasearch_perf_aon&utm_content=br_latam_perf_gfs_aon_nn_CNF_OPS_domestic_conversion_core_desktop&gclid=AAcRjHICRk_YTNV73UhEAAhcPPrIl5ElFiu88q9B5TUaBnUfWLNvDck_J5vc3Dqj1bvUZ_XEadsExq_L1Vb_R-ZsBBeDWnlEkGbc4P2p3xAWjPA5Y7s&gclsrc=gf"
+  },
+  "GIG-CNF-2027-01-10": {
+   "cia": "LATAM",
+   "loja": "LATAM",
+   "moeda": "BRL",
+   "preco": 613.0,
+   "quando": "2026-10-27T04:13:08.199737+00:00",
+   "saida": "05:25",
+   "tipo": "airline",
+   "url": "https://www.latamairlines.com/br/pt/oferta-voos?dataFlight=%7B%22tripTypeSelected%22:%7B%22value%22:%22OW%22%7D,%22cabinSelected%22:%7B%22label%22:%22Economy%22,%22value%22:%22Economy%22%7D,%22passengerSelected%22:%7B%22adultQuantity%22:1,%22childrenQuantity%22:0,%22infantQuantity%22:0%7D,%22originSelected%22:%7B%22id%22:%22GIG_BR_AIRPORT%22,%22iata%22:%22GIG%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22GIG%22%7D,%22destinationSelected%22:%7B%22id%22:%22CNF_BR_AIRPORT%22,%22iata%22:%22CNF%22,%22type%22:%22AIRPORT%22,%22airportIataCode%22:%22CNF%22%7D,%22dateGoSelected%22:%222027-01-10%22,%22dateReturnSelected%22:null%7D&sort=PRICE,asc&utm_medium=metasearch&utm_source=gfs&utm_campaign=br_latam_gfs_metasearch_perf_aon&utm_content=br_latam_perf_gfs_aon_nn_GIG_CNF_domestic_conversion_core_desktop&gclid=AAcRjHIut5tXbimpEY0fFQX35qJ3eMxmycIzCl-7naqhNVxT1S_-zR5JrG4j1af03tem4kY5h_6muGlYyZ1jGJv0XUn3jlpaOvIqBKzP-ENRd_27IZE&gclsrc=gf"
+  }
+ },
  "cotacoes": {
   "CNF-CGB-2026-12-18": {
-   "cia": "",
+   "cia": "LATAM",
    "moeda_original": "BRL",
-   "paradas": null,
+   "paradas": 1,
    "preco": 876.0,
-   "quando": "2026-10-27T04:00:02.672400+00:00",
-   "saida": ""
+   "quando": "2026-10-27T04:13:03.393111+00:00",
+   "saida": "6:20 AM on Fri, Dec 18"
   },
   "CNF-GIG-2027-01-08": {
    "cia": "Gol",
    "moeda_original": "BRL",
    "paradas": 0,
    "preco": 425.0,
-   "quando": "2026-10-27T03:59:55.400087+00:00",
+   "quando": "2026-10-27T04:12:54.558842+00:00",
    "saida": "3:05 PM on Fri, Jan 8"
   },
   "CNF-OPS-2026-12-18": {
-   "cia": "",
+   "cia": "LATAM",
    "moeda_original": "BRL",
-   "paradas": null,
+   "paradas": 1,
    "preco": 1226.0,
-   "quando": "2026-10-27T04:00:00.108563+00:00",
-   "saida": ""
+   "quando": "2026-10-27T04:13:00.735860+00:00",
+   "saida": "4:55 AM on Fri, Dec 18"
   },
   "GIG-CNF-2027-01-10": {
-   "cia": "",
+   "cia": "LATAM",
    "moeda_original": "BRL",
-   "paradas": null,
+   "paradas": 1,
    "preco": 613.0,
-   "quando": "2026-10-27T03:59:57.551208+00:00",
-   "saida": ""
+   "quando": "2026-10-27T04:12:58.089938+00:00",
+   "saida": "5:25 AM on Sun, Jan 10"
   }
  },
  "melhor_rota": {}
