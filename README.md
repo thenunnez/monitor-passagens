@@ -3,9 +3,11 @@
 Roda sozinho todo dia no GitHub (de graça) e avisa no Telegram quando:
 
 - **RJ, SP ou Vitória**: algum fim de semana ou feriado tem **ida e volta, cada trecho até R$ 240**
-  (ida na sexta ou na véspera do feriado; volta no último dia de folga ou no dia seguinte).
-- **Buenos Aires e Santiago**: aparece um **novo menor preço** de ida e volta de 5 a 10 dias,
-  com ida entre abril e setembro de 2027.
+  (ida na sexta ou na véspera do feriado; volta no último dia de folga ou no dia seguinte), a partir de jan/2027.
+- **Ida e volta** (avisa quando aparece um **novo menor preço**, com o top 5 de datas):
+  - Buenos Aires e Santiago: 5 a 10 dias, ida entre abril e setembro de 2027
+  - Cuiabá ↔ Confins (saindo de Cuiabá): 5 a 10 dias, a partir de janeiro de 2027
+  - Confins → Sinop ou Cuiabá: ida 18, 19 ou 20/12/2026 e volta 24, 25 ou 26/12/2026
 
 Toda **segunda-feira** chega um resumo completo, mesmo sem novidade.
 
@@ -32,11 +34,11 @@ No repositório: **Settings → Secrets and variables → Actions → New reposi
 mensagem de teste no Telegram com 4 preços.
 
 Pronto. A partir daí roda todo dia por volta das 6h40. Nos primeiros ~4 dias ele vai preenchendo
-todas as datas (são ~1.600 buscas, feitas aos poucos para não ser bloqueado).
+todas as datas (são ~2.300 buscas, feitas aos poucos para não ser bloqueado).
 
 ## Como mudar algo
 Tudo fica em `config.py`: limite de R$ 240, aeroportos, meses, duração da viagem, feriados de BH.
-Por exemplo, para incluir Bariloche, acrescente `"Argentina (Bariloche)": ["BRC"],` em `INTERNACIONAL`.
+Para uma rota nova de ida e volta, copie um bloco da lista `IDA_E_VOLTA` e troque aeroportos e datas.
 
 ## Se parar de funcionar
 O Google Flights não tem API oficial; o monitor usa a biblioteca `fast-flights`, que pode quebrar
