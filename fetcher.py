@@ -190,7 +190,7 @@ def link_kayak(origem: str, destino: str, data: str) -> str:
 def link_skyscanner(origem: str, destino: str, data: str) -> str:
     aammdd = data[2:4] + data[5:7] + data[8:10]
     return (f"https://www.skyscanner.com.br/transporte/passagens-aereas/{origem.lower()}/"
-            f"{destino.lower()}/{aammdd}/?adultsv2=1&cabinclass=economy&rtn=0")
+            f"{destino.lower()}/{aammdd}/")
 
 
 def link_maxmilhas(origem: str, destino: str, data: str) -> str:
