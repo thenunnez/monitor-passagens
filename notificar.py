@@ -18,14 +18,18 @@ def enviar(texto: str):
     def visivel(t):  # o limite do Telegram (4096) conta o texto sem as tags
         return len(html.unescape(re.sub(r"<[^>]+>", "", t)))
 
-    partes, atual, tam = [], "", 0
+    def entidades(t):  # o Telegram aceita no máx. 100 formatações (links, negrito...) por mensagem
+        return len(re.findall(r"<(a|b|i|code)[\s>]", t))
+
+    partes, atual, tam, ent = [], "", 0, 0
     for linha in texto.split("\n"):
-        v = visivel(linha) + 1
-        if atual and (tam + v > 3500 or len(atual) + len(linha) > 60000):
+        v, e = visivel(linha) + 1, entidades(linha)
+        if atual.strip() and (tam + v > 3500 or ent + e > 85):
             partes.append(atual)
-            atual, tam = "", 0
+            atual, tam, ent = "", 0, 0
         atual += linha + "\n"
         tam += v
+        ent += e
     if atual.strip():
         partes.append(atual)
     for p in partes:
@@ -34,7 +38,8 @@ def enviar(texto: str):
         except urllib.error.HTTPError as e:
             detalhe = e.read().decode("utf-8", "replace")[:300]
             print(f"[telegram] HTML recusado ({e.code}): {detalhe} — reenviando como texto simples")
-            simples = html.unescape(re.sub(r"<[^>]+>", "", p))
+            com_links = re.sub(r'<a href="([^"]*)">([^<]*)</a>', r"\2: \1", p)
+            simples = html.unescape(re.sub(r"<[^>]+>", "", com_links))
             _mandar(token, chat, simples, html_mode=False)
     return True
 

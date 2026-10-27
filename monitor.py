@@ -298,7 +298,7 @@ def preparar_compra(est, trechos):
 
 
 def linha_trecho(rot, cot, o, d, data):
-    return (f"  {rot} {fmt_data(data)} {o}→{d}: <b>{fmt_reais(cot['preco'])}</b> "
+    return (f"  {rot} {fmt_data(data)} {o}→{d}: {fmt_reais(cot['preco'])} "
             f"({info_voo((cot, o, d))})\n      {links_html(o, d, data)}")
 
 
