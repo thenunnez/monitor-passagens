@@ -248,7 +248,7 @@ def info_voo(c):
     cia = html.escape(p.get("cia") or "")
     paradas = p.get("paradas")
     escala = "" if not isinstance(paradas, int) else (" direto" if paradas == 0 else f" {paradas} parada(s)")
-    return f"{cia}{escala}".strip()
+    return f"{cia}{escala}".strip() or "cia não informada"
 
 
 COMPRA = {}  # chave do trecho -> resultado da Ignav (link direto de compra)
@@ -262,10 +262,10 @@ def links_html(o, d, data):
         preco = fmt_reais(c["preco"]) if c.get("moeda") == "BRL" else f"{c['preco']:.0f} {c.get('moeda', '')}"
         partes.append(f"🛒 <a href=\"{html.escape(c['url'])}\">Comprar na {html.escape(c.get('loja') or 'loja')}"
                       f" ({preco})</a>")
-    partes.append(f"<a href=\"{link_google(o, d, data)}\">Google</a>")
-    partes.append(f"<a href=\"{link_kayak(o, d, data)}\">Kayak</a>")
-    partes.append(f"<a href=\"{link_skyscanner(o, d, data)}\">Sky</a>")
-    partes.append(f"<a href=\"{link_maxmilhas(o, d, data)}\">MaxMilhas</a>")
+    partes.append(f"<a href=\"{html.escape(link_google(o, d, data))}\">Google</a>")
+    partes.append(f"<a href=\"{html.escape(link_kayak(o, d, data))}\">Kayak</a>")
+    partes.append(f"<a href=\"{html.escape(link_skyscanner(o, d, data))}\">Sky</a>")
+    partes.append(f"<a href=\"{html.escape(link_maxmilhas(o, d, data))}\">MaxMilhas</a>")
     return " · ".join(partes)
 
 
@@ -397,6 +397,8 @@ def main():
     nacional = analisar_nacional(janelas, cot)
     rotas = analisar_ida_volta(cot)
 
+    import copy
+    backup = copy.deepcopy({k: est.get(k) for k in ("alertas", "melhor_rota", "melhor_milhas")})
     novos_nac = []
     for a in nacional:
         ant = alertas.get(a["id"])
@@ -493,7 +495,17 @@ def main():
                       f"Último erro: <code>{html.escape(ultimo_erro)}</code>")
 
     if partes:
-        enviar("\n\n".join(partes))
+        try:
+            enviar("\n\n".join(partes))
+        except Exception:
+            # não marca como "já avisado" se a mensagem não chegou: reenvia amanhã
+            for k, v in backup.items():
+                if v is None:
+                    est.pop(k, None)
+                else:
+                    est[k] = v
+            salvar_estado(est)
+            raise
     else:
         print("Sem novidades hoje; nenhuma mensagem enviada.")
     if modo == "teste" and ok == 0:

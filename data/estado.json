@@ -1,16 +1,5 @@
 {
- "alertas": {
-  "N|São Paulo|2027-01-08": 450.0,
-  "N|São Paulo|2027-01-15": 450.0,
-  "N|São Paulo|2027-01-22": 448.0,
-  "N|São Paulo|2027-01-29": 446.0,
-  "N|São Paulo|2027-02-05": 446.0,
-  "N|São Paulo|2027-02-12": 446.0,
-  "N|São Paulo|2027-02-19": 446.0,
-  "N|São Paulo|2027-02-26": 446.0,
-  "N|São Paulo|2027-03-05": 446.0,
-  "N|São Paulo|2027-03-12": 446.0
- },
+ "alertas": {},
  "compra": {
   "CGB-CNF-2026-12-25": {
    "cia": "LATAM",
@@ -6061,8 +6050,5 @@
    "saida": ""
   }
  },
- "melhor_rota": {
-  "Confins → Sinop/Cuiabá (dezembro)": 1859.0,
-  "Cuiabá ↔ Confins (saindo de Cuiabá)": 1019.0
- }
+ "melhor_rota": {}
 }
