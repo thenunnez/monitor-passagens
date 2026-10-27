@@ -1,0 +1,44 @@
+name: Monitor de passagens
+
+on:
+  schedule:
+    - cron: "41 9 * * *"   # todo dia ~06:41 (horário de Brasília)
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "teste = poucas buscas, confere se está tudo certo; resumo = manda o resumo completo"
+        type: choice
+        options: [teste, normal, resumo]
+        default: teste
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Buscar preços
+        run: python monitor.py
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MODO: ${{ inputs.modo || 'normal' }}
+      - name: Salvar histórico de preços
+        if: always()
+        run: |
+          git config user.name "monitor-passagens"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || (git commit -m "Preços $(date -u +%F)" && git pull --rebase && git push)
