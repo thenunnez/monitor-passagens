@@ -1,1 +1,5 @@
 fast-flights @ git+https://github.com/AWeirdDev/flights@v3.1.0
+typing-extensions
+protobuf>=5.27.0
+selectolax
+primp

@@ -162,6 +162,8 @@ def executar_buscas(pendentes, cotacoes):
             cotacoes[chave(o, d, data)] = {"preco": None, "quando": datetime.now(timezone.utc).isoformat()}
             sem += 1
             seguidos = 0
+        except ImportError:
+            raise  # problema de instalação, não é bloqueio do Google: falha na hora com aviso claro
         except Exception as e:
             erros += 1
             seguidos += 1

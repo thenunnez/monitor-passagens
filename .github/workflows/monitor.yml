@@ -29,6 +29,8 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Conferir instalação
+        run: python -c "import fast_flights, typing_extensions; print('fast-flights ok')"
       - name: Buscar preços
         run: python monitor.py
         env:
