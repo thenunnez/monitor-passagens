@@ -148,9 +148,11 @@ def _buscar_real(origem: str, destino: str, data: str):
             resultado = ff.get_flights(q)
         except ff.FlightsNotFound as e:
             raise SemVoos() from e
-        except (AttributeError, IndexError, TypeError, ValueError) as e:
+        except AttributeError as e:
             # página sem o bloco de dados: normalmente limite de acessos do Google
-            raise Bloqueado(f"página do Google sem dados ({type(e).__name__})") from e
+            raise Bloqueado("página do Google sem o bloco de dados") from e
+        except (IndexError, TypeError, ValueError, KeyError) as e:
+            raise RuntimeError(f"erro ao ler a resposta do Google ({type(e).__name__}: {e})") from e
         melhor = None
         for f in resultado or []:
             preco = getattr(f, "price", None)
