@@ -1,4 +1,4 @@
-fast-flights @ git+https://github.com/AWeirdDev/flights@4261437
+fast-flights @ git+https://github.com/AWeirdDev/flights@4261437c506b228d20969910178a19e6d1bd2592
 typing-extensions
 protobuf>=5.27.0
 selectolax
