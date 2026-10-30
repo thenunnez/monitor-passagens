@@ -1007,6 +1007,14 @@
    "quando": "2026-10-29T10:25:15.604212+00:00",
    "saida": "04:20"
   },
+  "AEP-CNF-2027-06-22": {
+   "cia": "Gol",
+   "moeda_original": "BRL",
+   "paradas": 2,
+   "preco": 1872.0,
+   "quando": "2026-10-30T10:23:33.233636+00:00",
+   "saida": "23:00"
+  },
   "AEP-CNF-2027-06-23": {
    "cia": "LATAM",
    "moeda_original": "BRL",
@@ -1053,6 +1061,14 @@
    "paradas": 1,
    "preco": 1938.0,
    "quando": "2026-10-29T10:25:54.123034+00:00",
+   "saida": "21:45"
+  },
+  "AEP-CNF-2027-06-29": {
+   "cia": "LATAM",
+   "moeda_original": "BRL",
+   "paradas": 1,
+   "preco": 1954.0,
+   "quando": "2026-10-30T10:25:42.715867+00:00",
    "saida": "21:45"
   },
   "AEP-CNF-2027-06-30": {
